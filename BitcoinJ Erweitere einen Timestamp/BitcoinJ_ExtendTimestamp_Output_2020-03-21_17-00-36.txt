@@ -1,0 +1,29 @@
+Das Programm arbeitet im Netzwerk: org.bitcoin.test
+Guten Tag, zum Start bitte den Button 'starte das wallet' druecken
+Lade ein HD-Wallet mit BitcoinJ im Bitcoin Testnet und erweitere einen Timestamp um die Block-Hash
+
+Das Programm benutzt das BitcoinJ WalletAppKit
+
+Bitte benutzen Sie Java 11 und bitcoinj-core-0.15.6.jar fuer dieses Programm
+
+btn startKit Thread Running
+Das Wallet wurde geladen: TimestampOwn_Testnet
+
+Das Wallet aktualisiert die Blockchain in der Datei TimestampOwn_Testnet.spvchain
+Bitte haben Sie eine bis drei Minuten Geduld
+Das aktuell verfuegbare Guthaben ist: 0.03236775 BTC = 3236775 Satoshi
+Aktuelle Empfangsadresse            : mufFWLjsN4xqb6SusTVPdTZsEQde2mSGUd
+Das Programm ist betriebsbereit und wartet auf den Einsatz
+Datei die mit einem Timestamp versehen werden soll: C:\Users\admi\Documents\java-crypto_bplaced_net.pdf
+
+Informationen im OP_RETURN-Bereich der Transaktion werden gesucht:
+Die Timestamp-Datei C:\Users\admi\Documents\java-crypto_bplaced_net.pdf.timestamp.txt ist vorhanden: true
+TxId in der Datei: 406952a7ec2da89814ab1b635b6bad3e5fc46affdfd7c4deaa301973e7939aa0
+Die Transaktion wurde nicht gefunden
+Die Transaktion wurde gefunden und die erweiterete Timestamp-Datei wurde erzeugt
+Speicherung des erweiterten Timestamp in die Datei:
+C:\Users\admi\Documents\java-crypto_bplaced_net.pdf.timestamp_extended.txt
+btnClose Thread Running
+Das Programm endet jetzt
+Datum & Zeit am Start: 2020-03-21T17:01:27.435274
+Datum & Zeit am Ende :  2020-03-21T17:03:58.548207700
