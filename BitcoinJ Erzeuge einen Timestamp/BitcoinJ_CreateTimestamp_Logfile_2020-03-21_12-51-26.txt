@@ -1,0 +1,576 @@
+[Thread-0] INFO org.bitcoinj.core.Context - Creating bitcoinj 0.15.6 context.
+[WalletAppKit STARTING] INFO org.bitcoinj.kits.WalletAppKit - Starting up with directory = .
+[WalletAppKit STARTING] INFO org.bitcoinj.store.SPVBlockStore - Creating new SPV block chain file .\TimestampOwn_Testnet.spvchain
+[WalletAppKit STARTING] INFO org.bitcoinj.core.CheckpointManager - Attempting to initialize a new block store with a checkpoint for time 1582728027 (2020-02-26T14:40:27Z)
+[WalletAppKit STARTING] INFO org.bitcoinj.core.CheckpointManager - Read 719 checkpoints up to time 2018-12-25T17:01:32Z, hash is 26940f1b442e9d2557a2dd9dd1ddf4cb08dd2d5fd05758542b9b852199d0ada2
+[WalletAppKit STARTING] INFO org.bitcoinj.core.AbstractBlockChain - chain head is at height 1449504:
+ block: 
+   hash: 000000000000013c89bd4e704bbfe26476f70d3e2881ca2c3553563fac07fd94
+   version: 536870912 (BIP34, BIP66, BIP65)
+   previous block: 00000000000000f15b8a196b1c3568d14b5a7856da2fef7a7f5548266582ff28
+   time: 1545757292 (2018-12-25T17:01:32Z)
+   difficulty target (nBits): 436290249
+   nonce: 2970861476
+
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Starting ...
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Localhost peer not detected.
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Peer discovery took 193.0 ms and returned 114 items
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Waiting 2266 ms before next connect attempt to [2001:0:5ef5:79fd:240b:1160:4cc9:b334]:18333
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Attempting connection to [45.115.178.92]:18333     (0 connected, 1 pending, 12 max)
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Attempting connection to [2001:0:5ef5:79fd:240b:1160:4cc9:b334]:18333     (0 connected, 2 pending, 12 max)
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Attempting connection to [2600:6c44:6380:1700:6917:d207:e9cd:ea14]:18333     (0 connected, 3 pending, 12 max)
+[NioClientManager] WARN org.bitcoinj.net.NioClientManager - Failed to connect with exception: java.net.SocketException: Network is unreachable: no further information
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Attempting connection to [165.22.49.1]:18333     (0 connected, 4 pending, 12 max)
+java.net.SocketException: Network is unreachable: no further information
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
+	at org.bitcoinj.net.NioClientManager.handleKey(NioClientManager.java:64)
+	at org.bitcoinj.net.NioClientManager.run(NioClientManager.java:122)
+	at com.google.common.util.concurrent.AbstractExecutionThreadService$1$2.run(AbstractExecutionThreadService.java:66)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:119)
+	at org.bitcoinj.utils.ContextPropagatingThreadFactory$1.run(ContextPropagatingThreadFactory.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Attempting connection to [142.245.72.12]:18333     (0 connected, 5 pending, 12 max)
+[NioClientManager] INFO org.bitcoinj.core.PeerGroup - [2001:0:5ef5:79fd:240b:1160:4cc9:b334]:18333: Peer died      (0 connected, 4 pending, 12 max)
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Waiting 1500 ms before next connect attempt to [198.251.83.19]:18333
+[NioClientManager] WARN org.bitcoinj.net.NioClientManager - Failed to connect with exception: java.net.SocketException: Network is unreachable: no further information
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Waiting 1485 ms before next connect attempt to [34.250.169.52]:18333
+java.net.SocketException: Network is unreachable: no further information
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
+	at org.bitcoinj.net.NioClientManager.handleKey(NioClientManager.java:64)
+	at org.bitcoinj.net.NioClientManager.run(NioClientManager.java:122)
+	at com.google.common.util.concurrent.AbstractExecutionThreadService$1$2.run(AbstractExecutionThreadService.java:66)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:119)
+	at org.bitcoinj.utils.ContextPropagatingThreadFactory$1.run(ContextPropagatingThreadFactory.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+[NioClientManager] INFO org.bitcoinj.core.PeerGroup - [2600:6c44:6380:1700:6917:d207:e9cd:ea14]:18333: Peer died      (0 connected, 3 pending, 12 max)
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Waiting 2250 ms before next connect attempt to [198.251.83.19]:18333
+[NioClientManager] INFO org.bitcoinj.net.NioClientManager - Connected to seed.tbtc.petertodd.org/45.115.178.92:18333
+[NioClientManager] INFO org.bitcoinj.core.Peer - Announcing to seed.tbtc.petertodd.org/45.115.178.92:18333 as: /bitcoinj:0.15.6/
+[NioClientManager] INFO org.bitcoinj.net.NioClientManager - Connected to testnet-seed.bitcoin.jonasschnelli.ch/165.22.49.1:18333
+[NioClientManager] INFO org.bitcoinj.core.Peer - Announcing to testnet-seed.bitcoin.jonasschnelli.ch/165.22.49.1:18333 as: /bitcoinj:0.15.6/
+[NioClientManager] INFO org.bitcoinj.net.NioClientManager - Connected to seed.tbtc.petertodd.org/142.245.72.12:18333
+[NioClientManager] INFO org.bitcoinj.core.Peer - Announcing to seed.tbtc.petertodd.org/142.245.72.12:18333 as: /bitcoinj:0.15.6/
+[NioClientManager] INFO org.bitcoinj.core.Peer - Peer{[142.245.72.12]:18333, version=70015, subVer=/Satoshi:0.18.0/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2020-03-21 12:51:47, height=1670698}
+[NioClientManager] INFO org.bitcoinj.core.Peer - Peer{[45.115.178.92]:18333, version=70015, subVer=/Satoshi:0.17.1/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2020-03-21 12:51:48, height=1670698}
+[NioClientManager] INFO org.bitcoinj.core.PeerGroup - Peer{[45.115.178.92]:18333, version=70015, subVer=/Satoshi:0.17.1/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2020-03-21 12:51:48, height=1670698}: New peer      (1 connected, 2 pending, 12 max)
+[NioClientManager] INFO org.bitcoinj.core.Peer - Peer{[45.115.178.92]:18333, version=70015, subVer=/Satoshi:0.17.1/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2020-03-21 12:51:48, height=1670698}: Sending Bloom filter and querying mempool
+[NioClientManager] INFO org.bitcoinj.core.PeerGroup - Peer{[142.245.72.12]:18333, version=70015, subVer=/Satoshi:0.18.0/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2020-03-21 12:51:47, height=1670698}: New peer      (2 connected, 1 pending, 12 max)
+[NioClientManager] INFO org.bitcoinj.core.Peer - Peer{[142.245.72.12]:18333, version=70015, subVer=/Satoshi:0.18.0/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2020-03-21 12:51:47, height=1670698}: Sending Bloom filter and querying mempool
+[NioClientManager] INFO org.bitcoinj.core.Peer - Peer{[165.22.49.1]:18333, version=70015, subVer=/Satoshi:0.19.1/, services=1033 (NETWORK, WITNESS, NETWORK_LIMITED), time=2020-03-21 12:51:48, height=1670698}
+[NioClientManager] INFO org.bitcoinj.core.PeerGroup - Peer{[165.22.49.1]:18333, version=70015, subVer=/Satoshi:0.19.1/, services=1033 (NETWORK, WITNESS, NETWORK_LIMITED), time=2020-03-21 12:51:48, height=1670698}: New peer      (3 connected, 0 pending, 12 max)
+[NioClientManager] INFO org.bitcoinj.core.PeerGroup - [142.245.72.12]:18333: Peer died      (2 connected, 0 pending, 12 max)
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Waiting 1000 ms before next connect attempt to [178.128.3.21]:18333
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Waiting 79 ms before next connect attempt to [2a01:4f8:110:5243:0:0:0:2]:18333
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Waiting 47 ms before next connect attempt to [178.128.3.21]:18333
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Attempting connection to [2a01:4f8:110:5243:0:0:0:2]:18333     (2 connected, 1 pending, 12 max)
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Attempting connection to [178.128.3.21]:18333     (2 connected, 2 pending, 12 max)
+[NioClientManager] WARN org.bitcoinj.net.NioClientManager - Failed to connect with exception: java.net.SocketException: Network is unreachable: no further information
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Attempting connection to [198.251.83.19]:18333     (2 connected, 3 pending, 12 max)
+java.net.SocketException: Network is unreachable: no further information
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
+	at org.bitcoinj.net.NioClientManager.handleKey(NioClientManager.java:64)
+	at org.bitcoinj.net.NioClientManager.run(NioClientManager.java:122)
+	at com.google.common.util.concurrent.AbstractExecutionThreadService$1$2.run(AbstractExecutionThreadService.java:66)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:119)
+	at org.bitcoinj.utils.ContextPropagatingThreadFactory$1.run(ContextPropagatingThreadFactory.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Attempting connection to [34.250.169.52]:18333     (2 connected, 4 pending, 12 max)
+[NioClientManager] INFO org.bitcoinj.core.PeerGroup - [2a01:4f8:110:5243:0:0:0:2]:18333: Peer died      (2 connected, 3 pending, 12 max)
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Waiting 1500 ms before next connect attempt to [2a02:c207:2022:4422:0:0:0:1]:18333
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Waiting 1484 ms before next connect attempt to [2a01:4f9:2b:13c5:0:0:0:2]:18333
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Waiting 1484 ms before next connect attempt to [2a02:c207:2022:4422:0:0:0:1]:18333
+[NioClientManager] INFO org.bitcoinj.net.NioClientManager - Connected to seed.tbtc.petertodd.org/34.250.169.52:18333
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Waiting 1468 ms before next connect attempt to [2a01:4f9:2b:13c5:0:0:0:2]:18333
+[NioClientManager] INFO org.bitcoinj.core.Peer - Announcing to seed.tbtc.petertodd.org/34.250.169.52:18333 as: /bitcoinj:0.15.6/
+[NioClientManager] INFO org.bitcoinj.net.NioClientManager - Connected to testnet-seed.bluematt.me/198.251.83.19:18333
+[NioClientManager] INFO org.bitcoinj.core.Peer - Announcing to testnet-seed.bluematt.me/198.251.83.19:18333 as: /bitcoinj:0.15.6/
+[NioClientManager] INFO org.bitcoinj.net.NioClientManager - Connected to seed.tbtc.petertodd.org/178.128.3.21:18333
+[NioClientManager] INFO org.bitcoinj.core.Peer - Announcing to seed.tbtc.petertodd.org/178.128.3.21:18333 as: /bitcoinj:0.15.6/
+[NioClientManager] INFO org.bitcoinj.core.Peer - Peer{[34.250.169.52]:18333, version=70015, subVer=/Satoshi:0.16.3/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2020-03-21 12:51:49, height=1670698}
+[NioClientManager] INFO org.bitcoinj.core.PeerGroup - Peer{[34.250.169.52]:18333, version=70015, subVer=/Satoshi:0.16.3/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2020-03-21 12:51:49, height=1670698}: New peer      (3 connected, 2 pending, 12 max)
+[NioClientManager] INFO org.bitcoinj.core.Peer - Peer{[34.250.169.52]:18333, version=70015, subVer=/Satoshi:0.16.3/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2020-03-21 12:51:49, height=1670698}: Sending Bloom filter and querying mempool
+[NioClientManager] INFO org.bitcoinj.core.Peer - Peer{[198.251.83.19]:18333, version=70015, subVer=/Satoshi:0.19.1/, services=1033 (NETWORK, WITNESS, NETWORK_LIMITED), time=2020-03-21 12:51:49, height=1670698}
+[NioClientManager] INFO org.bitcoinj.core.PeerGroup - Peer{[198.251.83.19]:18333, version=70015, subVer=/Satoshi:0.19.1/, services=1033 (NETWORK, WITNESS, NETWORK_LIMITED), time=2020-03-21 12:51:49, height=1670698}: New peer      (4 connected, 1 pending, 12 max)
+[NioClientManager] INFO org.bitcoinj.core.Peer - Peer{[178.128.3.21]:18333, version=70015, subVer=/Satoshi:0.19.0.1/, services=1033 (NETWORK, WITNESS, NETWORK_LIMITED), time=2020-03-21 12:51:49, height=1670698}
+[NioClientManager] INFO org.bitcoinj.core.PeerGroup - Peer{[178.128.3.21]:18333, version=70015, subVer=/Satoshi:0.19.0.1/, services=1033 (NETWORK, WITNESS, NETWORK_LIMITED), time=2020-03-21 12:51:49, height=1670698}: New peer      (5 connected, 0 pending, 12 max)
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Attempting connection to [2a02:c207:2022:4422:0:0:0:1]:18333     (5 connected, 1 pending, 12 max)
+[NioClientManager] WARN org.bitcoinj.net.NioClientManager - Failed to connect with exception: java.net.SocketException: Network is unreachable: no further information
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Attempting connection to [2a01:4f9:2b:13c5:0:0:0:2]:18333     (5 connected, 2 pending, 12 max)
+java.net.SocketException: Network is unreachable: no further information
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
+	at org.bitcoinj.net.NioClientManager.handleKey(NioClientManager.java:64)
+	at org.bitcoinj.net.NioClientManager.run(NioClientManager.java:122)
+	at com.google.common.util.concurrent.AbstractExecutionThreadService$1$2.run(AbstractExecutionThreadService.java:66)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:119)
+	at org.bitcoinj.utils.ContextPropagatingThreadFactory$1.run(ContextPropagatingThreadFactory.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Attempting connection to [35.220.186.22]:18333     (5 connected, 3 pending, 12 max)
+[NioClientManager] INFO org.bitcoinj.core.PeerGroup - [2a02:c207:2022:4422:0:0:0:1]:18333: Peer died      (5 connected, 2 pending, 12 max)
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Waiting 1000 ms before next connect attempt to [52.197.205.193]:18333
+[NioClientManager] WARN org.bitcoinj.net.NioClientManager - Failed to connect with exception: java.net.SocketException: Network is unreachable: no further information
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Waiting 984 ms before next connect attempt to [50.2.13.165]:18333
+java.net.SocketException: Network is unreachable: no further information
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
+	at org.bitcoinj.net.NioClientManager.handleKey(NioClientManager.java:64)
+	at org.bitcoinj.net.NioClientManager.run(NioClientManager.java:122)
+	at com.google.common.util.concurrent.AbstractExecutionThreadService$1$2.run(AbstractExecutionThreadService.java:66)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:119)
+	at org.bitcoinj.utils.ContextPropagatingThreadFactory$1.run(ContextPropagatingThreadFactory.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+[NioClientManager] INFO org.bitcoinj.core.PeerGroup - [2a01:4f9:2b:13c5:0:0:0:2]:18333: Peer died      (5 connected, 1 pending, 12 max)
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Waiting 1500 ms before next connect attempt to [52.197.205.193]:18333
+[NioClientManager] INFO org.bitcoinj.net.NioClientManager - Connected to testnet-seed.bitcoin.jonasschnelli.ch/35.220.186.22:18333
+[NioClientManager] INFO org.bitcoinj.core.Peer - Announcing to testnet-seed.bitcoin.jonasschnelli.ch/35.220.186.22:18333 as: /bitcoinj:0.15.6/
+[NioClientManager] INFO org.bitcoinj.core.Peer - Peer{[35.220.186.22]:18333, version=70015, subVer=/Satoshi:0.18.1(Omni:0.8.0)/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2020-03-21 12:51:50, height=1670698}
+[NioClientManager] INFO org.bitcoinj.core.PeerGroup - Peer{[35.220.186.22]:18333, version=70015, subVer=/Satoshi:0.18.1(Omni:0.8.0)/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2020-03-21 12:51:50, height=1670698}: New peer      (6 connected, 0 pending, 12 max)
+[NioClientManager] INFO org.bitcoinj.core.Peer - Peer{[35.220.186.22]:18333, version=70015, subVer=/Satoshi:0.18.1(Omni:0.8.0)/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2020-03-21 12:51:50, height=1670698}: Sending Bloom filter and querying mempool
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Attempting connection to [3.114.7.254]:18333     (6 connected, 1 pending, 12 max)
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Attempting connection to [52.197.205.193]:18333     (6 connected, 2 pending, 12 max)
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Attempting connection to [50.2.13.165]:18333     (6 connected, 3 pending, 12 max)
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Attempting connection to [46.28.204.21]:18333     (6 connected, 4 pending, 12 max)
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Attempting connection to [45.76.191.201]:18333     (6 connected, 5 pending, 12 max)
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Attempting connection to [fd87:d87e:eb43:6a8b:d278:3f7a:f892:8f80]:18333     (6 connected, 6 pending, 12 max)
+[NioClientManager] INFO org.bitcoinj.net.NioClientManager - Connected to seed.tbtc.petertodd.org/46.28.204.21:18333
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Attempting connection to [2001:0:9d38:90d7:433:113d:355b:3ed4]:18333     (6 connected, 7 pending, 12 max)
+[NioClientManager] INFO org.bitcoinj.core.Peer - Announcing to seed.tbtc.petertodd.org/46.28.204.21:18333 as: /bitcoinj:0.15.6/
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Attempting connection to [195.154.163.75]:18333     (6 connected, 8 pending, 12 max)
+[NioClientManager] WARN org.bitcoinj.net.NioClientManager - Failed to connect with exception: java.net.SocketException: Network is unreachable: no further information
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Attempting connection to [2402:1f00:8001:36b:0:0:0:0]:18333     (6 connected, 9 pending, 12 max)
+java.net.SocketException: Network is unreachable: no further information
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
+	at org.bitcoinj.net.NioClientManager.handleKey(NioClientManager.java:64)
+	at org.bitcoinj.net.NioClientManager.run(NioClientManager.java:122)
+	at com.google.common.util.concurrent.AbstractExecutionThreadService$1$2.run(AbstractExecutionThreadService.java:66)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:119)
+	at org.bitcoinj.utils.ContextPropagatingThreadFactory$1.run(ContextPropagatingThreadFactory.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Attempting connection to [213.186.116.217]:18333     (6 connected, 10 pending, 12 max)
+[NioClientManager] INFO org.bitcoinj.core.PeerGroup - [fd87:d87e:eb43:6a8b:d278:3f7a:f892:8f80]:18333: Peer died      (6 connected, 9 pending, 12 max)
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Waiting 1015 ms before next connect attempt to [109.233.109.26]:18333
+[NioClientManager] WARN org.bitcoinj.net.NioClientManager - Failed to connect with exception: java.net.SocketException: Network is unreachable: no further information
+java.net.SocketException: Network is unreachable: no further information
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
+	at org.bitcoinj.net.NioClientManager.handleKey(NioClientManager.java:64)
+	at org.bitcoinj.net.NioClientManager.run(NioClientManager.java:122)
+	at com.google.common.util.concurrent.AbstractExecutionThreadService$1$2.run(AbstractExecutionThreadService.java:66)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:119)
+	at org.bitcoinj.utils.ContextPropagatingThreadFactory$1.run(ContextPropagatingThreadFactory.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+[NioClientManager] INFO org.bitcoinj.core.PeerGroup - [2001:0:9d38:90d7:433:113d:355b:3ed4]:18333: Peer died      (6 connected, 8 pending, 12 max)
+[NioClientManager] INFO org.bitcoinj.net.NioClientManager - Connected to seed.testnet.bitcoin.sprovoost.nl/213.186.116.217:18333
+[NioClientManager] INFO org.bitcoinj.core.Peer - Announcing to seed.testnet.bitcoin.sprovoost.nl/213.186.116.217:18333 as: /bitcoinj:0.15.6/
+[NioClientManager] INFO org.bitcoinj.net.NioClientManager - Connected to testnet-seed.bitcoin.jonasschnelli.ch/50.2.13.165:18333
+[NioClientManager] INFO org.bitcoinj.core.Peer - Announcing to testnet-seed.bitcoin.jonasschnelli.ch/50.2.13.165:18333 as: /bitcoinj:0.15.6/
+[NioClientManager] WARN org.bitcoinj.net.NioClientManager - Failed to connect with exception: java.net.SocketException: Network is unreachable: no further information
+java.net.SocketException: Network is unreachable: no further information
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
+	at org.bitcoinj.net.NioClientManager.handleKey(NioClientManager.java:64)
+	at org.bitcoinj.net.NioClientManager.run(NioClientManager.java:122)
+	at com.google.common.util.concurrent.AbstractExecutionThreadService$1$2.run(AbstractExecutionThreadService.java:66)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:119)
+	at org.bitcoinj.utils.ContextPropagatingThreadFactory$1.run(ContextPropagatingThreadFactory.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+[NioClientManager] INFO org.bitcoinj.core.PeerGroup - [2402:1f00:8001:36b:0:0:0:0]:18333: Peer died      (6 connected, 7 pending, 12 max)
+[NioClientManager] INFO org.bitcoinj.net.NioClientManager - Connected to seed.tbtc.petertodd.org/195.154.163.75:18333
+[NioClientManager] INFO org.bitcoinj.core.Peer - Announcing to seed.tbtc.petertodd.org/195.154.163.75:18333 as: /bitcoinj:0.15.6/
+[NioClientManager] INFO org.bitcoinj.core.Peer - Peer{[46.28.204.21]:18333, version=70015, subVer=/Satoshi:0.17.0/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2020-03-21 12:51:51, height=1670698}
+[NioClientManager] INFO org.bitcoinj.core.PeerGroup - Peer{[46.28.204.21]:18333, version=70015, subVer=/Satoshi:0.17.0/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2020-03-21 12:51:51, height=1670698}: New peer      (7 connected, 6 pending, 12 max)
+[NioClientManager] INFO org.bitcoinj.core.Peer - Peer{[46.28.204.21]:18333, version=70015, subVer=/Satoshi:0.17.0/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2020-03-21 12:51:51, height=1670698}: Sending Bloom filter and querying mempool
+[NioClientManager] INFO org.bitcoinj.core.PeerGroup - Setting download peer: Peer{[34.250.169.52]:18333, version=70015, subVer=/Satoshi:0.16.3/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2020-03-21 12:51:49, height=1670698}
+[NioClientManager] INFO org.bitcoinj.core.listeners.DownloadProgressTracker - Downloading block chain of size 221194. This may take a while.
+[NioClientManager] INFO org.bitcoinj.net.NioClientManager - Connected to seed.tbtc.petertodd.org/3.114.7.254:18333
+[NioClientManager] INFO org.bitcoinj.core.Peer - Announcing to seed.tbtc.petertodd.org/3.114.7.254:18333 as: /bitcoinj:0.15.6/
+[NioClientManager] INFO org.bitcoinj.net.NioClientManager - Connected to seed.testnet.bitcoin.sprovoost.nl/52.197.205.193:18333
+[NioClientManager] INFO org.bitcoinj.core.Peer - Announcing to seed.testnet.bitcoin.sprovoost.nl/52.197.205.193:18333 as: /bitcoinj:0.15.6/
+[NioClientManager] INFO org.bitcoinj.core.Peer - Peer{[195.154.163.75]:18333, version=70015, subVer=/Satoshi:0.16.3/, services=1033 (NETWORK, WITNESS, NETWORK_LIMITED), time=2020-03-21 12:51:51, height=1670698}
+[NioClientManager] INFO org.bitcoinj.core.PeerGroup - Peer{[195.154.163.75]:18333, version=70015, subVer=/Satoshi:0.16.3/, services=1033 (NETWORK, WITNESS, NETWORK_LIMITED), time=2020-03-21 12:51:51, height=1670698}: New peer      (8 connected, 5 pending, 12 max)
+[NioClientManager] INFO org.bitcoinj.core.Peer - Peer{[213.186.116.217]:18333, version=70015, subVer=/Satoshi:0.18.0/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2020-03-21 12:51:50, height=1670698}
+[NioClientManager] INFO org.bitcoinj.core.PeerGroup - Peer{[213.186.116.217]:18333, version=70015, subVer=/Satoshi:0.18.0/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2020-03-21 12:51:50, height=1670698}: New peer      (9 connected, 4 pending, 12 max)
+[NioClientManager] INFO org.bitcoinj.core.Peer - Peer{[213.186.116.217]:18333, version=70015, subVer=/Satoshi:0.18.0/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2020-03-21 12:51:50, height=1670698}: Sending Bloom filter and querying mempool
+[NioClientManager] INFO org.bitcoinj.core.Peer - Peer{[50.2.13.165]:18333, version=70015, subVer=/Satoshi:0.19.1/, services=1033 (NETWORK, WITNESS, NETWORK_LIMITED), time=2020-03-21 12:51:51, height=1670698}
+[NioClientManager] INFO org.bitcoinj.core.PeerGroup - Peer{[50.2.13.165]:18333, version=70015, subVer=/Satoshi:0.19.1/, services=1033 (NETWORK, WITNESS, NETWORK_LIMITED), time=2020-03-21 12:51:51, height=1670698}: New peer      (10 connected, 3 pending, 12 max)
+[NioClientManager] INFO org.bitcoinj.core.Peer - Peer{[52.197.205.193]:18333, version=70015, subVer=/Satoshi:0.19.0.1/, services=1033 (NETWORK, WITNESS, NETWORK_LIMITED), time=2020-03-21 12:51:51, height=1670698}
+[NioClientManager] INFO org.bitcoinj.core.PeerGroup - Peer{[52.197.205.193]:18333, version=70015, subVer=/Satoshi:0.19.0.1/, services=1033 (NETWORK, WITNESS, NETWORK_LIMITED), time=2020-03-21 12:51:51, height=1670698}: New peer      (11 connected, 2 pending, 12 max)
+[NioClientManager] INFO org.bitcoinj.core.Peer - Peer{[3.114.7.254]:18333, version=70015, subVer=/Satoshi:0.19.1/, services=1033 (NETWORK, WITNESS, NETWORK_LIMITED), time=2020-03-21 12:52:05, height=1670698}
+[NioClientManager] INFO org.bitcoinj.core.PeerGroup - Peer{[3.114.7.254]:18333, version=70015, subVer=/Satoshi:0.19.1/, services=1033 (NETWORK, WITNESS, NETWORK_LIMITED), time=2020-03-21 12:52:05, height=1670698}: New peer      (12 connected, 1 pending, 12 max)
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Attempting connection to [165.22.52.101]:18333     (12 connected, 2 pending, 12 max)
+[NioClientManager] INFO org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 1% done with 218982 blocks to go, block date 2019-01-10T01:42:29Z
+[NioClientManager] INFO org.bitcoinj.net.NioClientManager - Connected to seed.testnet.bitcoin.sprovoost.nl/165.22.52.101:18333
+[NioClientManager] INFO org.bitcoinj.core.Peer - Announcing to seed.testnet.bitcoin.sprovoost.nl/165.22.52.101:18333 as: /bitcoinj:0.15.6/
+[NioClientManager] INFO org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 2% done with 216770 blocks to go, block date 2019-01-25T14:47:30Z
+[NioClientManager] INFO org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 3% done with 214558 blocks to go, block date 2019-02-07T16:51:56Z
+[NioClientManager] INFO org.bitcoinj.core.Peer - Peer{[165.22.52.101]:18333, version=70015, subVer=/Satoshi:0.19.1/, services=1033 (NETWORK, WITNESS, NETWORK_LIMITED), time=2020-03-21 12:51:52, height=1670698}
+[NioClientManager] INFO org.bitcoinj.core.PeerGroup - Peer{[165.22.52.101]:18333, version=70015, subVer=/Satoshi:0.19.1/, services=1033 (NETWORK, WITNESS, NETWORK_LIMITED), time=2020-03-21 12:51:52, height=1670698}: New peer      (13 connected, 1 pending, 12 max)
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Attempting connection to [77.247.178.250]:18333     (13 connected, 2 pending, 12 max)
+[NioClientManager] INFO org.bitcoinj.net.NioClientManager - Connected to testnet-seed.bitcoin.jonasschnelli.ch/77.247.178.250:18333
+[NioClientManager] INFO org.bitcoinj.core.Peer - Announcing to testnet-seed.bitcoin.jonasschnelli.ch/77.247.178.250:18333 as: /bitcoinj:0.15.6/
+[NioClientManager] INFO org.bitcoinj.core.Peer - Peer{[77.247.178.250]:18333, version=70015, subVer=/Satoshi:0.16.0/, services=1036 (BLOOM, WITNESS, NETWORK_LIMITED), time=2020-03-21 12:51:52, height=1414448}
+[NioClientManager] INFO org.bitcoinj.core.PeerGroup - Peer{[77.247.178.250]:18333, version=70015, subVer=/Satoshi:0.16.0/, services=1036 (BLOOM, WITNESS, NETWORK_LIMITED), time=2020-03-21 12:51:52, height=1414448}: New peer      (14 connected, 1 pending, 12 max)
+[NioClientManager] INFO org.bitcoinj.core.Peer - Peer{[77.247.178.250]:18333, version=70015, subVer=/Satoshi:0.16.0/, services=1036 (BLOOM, WITNESS, NETWORK_LIMITED), time=2020-03-21 12:51:52, height=1414448}: Sending Bloom filter and querying mempool
+[NioClientManager] INFO org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 4% done with 212346 blocks to go, block date 2019-02-18T06:33:03Z
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup$ChainDownloadSpeedCalculator - 10000 blocks/sec, 0 tx/sec, 0 pre-filtered tx/sec, avg/last 79.53/781.25 kilobytes per sec, chain/common height 1459504/1670698 (warming up 14 more seconds)
+[NioClientManager] INFO org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 5% done with 210134 blocks to go, block date 2019-02-18T06:45:55Z
+[NioClientManager] INFO org.bitcoinj.core.PeerGroup - [213.186.116.217]:18333: Peer died      (13 connected, 1 pending, 12 max)
+[AbstractTimeoutHandler timeouts] INFO org.bitcoinj.core.PeerSocketHandler - [2001:0:5ef5:79fd:240b:1160:4cc9:b334]:18333: Timed out
+[AbstractTimeoutHandler timeouts] INFO org.bitcoinj.core.PeerGroup - [2001:0:5ef5:79fd:240b:1160:4cc9:b334]:18333: Peer died      (13 connected, 1 pending, 12 max)
+[AbstractTimeoutHandler timeouts] INFO org.bitcoinj.core.PeerSocketHandler - [2600:6c44:6380:1700:6917:d207:e9cd:ea14]:18333: Timed out
+[NioClientManager] INFO org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 6% done with 207922 blocks to go, block date 2019-02-18T06:58:59Z
+[AbstractTimeoutHandler timeouts] INFO org.bitcoinj.core.PeerGroup - [2600:6c44:6380:1700:6917:d207:e9cd:ea14]:18333: Peer died      (13 connected, 1 pending, 12 max)
+[NioClientManager] INFO org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 7% done with 205710 blocks to go, block date 2019-02-18T07:11:53Z
+[NioClientManager] INFO org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 8% done with 203498 blocks to go, block date 2019-02-18T07:24:55Z
+[NioClientManager] INFO org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 9% done with 201286 blocks to go, block date 2019-02-18T07:41:47Z
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup$ChainDownloadSpeedCalculator - 10000 blocks/sec, 0 tx/sec, 0 pre-filtered tx/sec, avg/last 157.50/781.25 kilobytes per sec, chain/common height 1469504/1670698 (warming up 13 more seconds)
+[NioClientManager] INFO org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 10% done with 199074 blocks to go, block date 2019-02-18T08:22:26Z
+[NioClientManager] INFO org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 11% done with 196862 blocks to go, block date 2019-02-18T10:31:22Z
+[NioClientManager] INFO org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 12% done with 194650 blocks to go, block date 2019-02-18T16:48:01Z
+[NioClientManager] INFO org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 13% done with 192438 blocks to go, block date 2019-02-19T12:39:03Z
+[AbstractTimeoutHandler timeouts] INFO org.bitcoinj.core.PeerSocketHandler - [2a01:4f8:110:5243:0:0:0:2]:18333: Timed out
+[AbstractTimeoutHandler timeouts] INFO org.bitcoinj.core.PeerGroup - [2a01:4f8:110:5243:0:0:0:2]:18333: Peer died      (13 connected, 1 pending, 12 max)
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup$ChainDownloadSpeedCalculator - 10726 blocks/sec, 0 tx/sec, 0 pre-filtered tx/sec, avg/last 241.14/837.97 kilobytes per sec, chain/common height 1480231/1670698 (warming up 12 more seconds)
+[NioClientManager] INFO org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 14% done with 190226 blocks to go, block date 2019-02-22T17:05:24Z
+[NioClientManager] INFO org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 15% done with 188014 blocks to go, block date 2019-03-02T05:15:24Z
+[NioClientManager] INFO org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 16% done with 185802 blocks to go, block date 2019-03-16T11:42:45Z
+[NioClientManager] INFO org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 17% done with 183591 blocks to go, block date 2019-04-03T01:51:20Z
+[AbstractTimeoutHandler timeouts] INFO org.bitcoinj.core.PeerSocketHandler - [2a02:c207:2022:4422:0:0:0:1]:18333: Timed out
+[AbstractTimeoutHandler timeouts] INFO org.bitcoinj.core.PeerGroup - [2a02:c207:2022:4422:0:0:0:1]:18333: Peer died      (13 connected, 1 pending, 12 max)
+[AbstractTimeoutHandler timeouts] INFO org.bitcoinj.core.PeerSocketHandler - [2a01:4f9:2b:13c5:0:0:0:2]:18333: Timed out
+[AbstractTimeoutHandler timeouts] INFO org.bitcoinj.core.PeerGroup - [2a01:4f9:2b:13c5:0:0:0:2]:18333: Peer died      (13 connected, 1 pending, 12 max)
+[NioClientManager] INFO org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 18% done with 181379 blocks to go, block date 2019-04-16T11:16:24Z
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup$ChainDownloadSpeedCalculator - 9274 blocks/sec, 0 tx/sec, 0 pre-filtered tx/sec, avg/last 313.44/724.53 kilobytes per sec, chain/common height 1489504/1670698 (warming up 11 more seconds)
+[NioClientManager] INFO org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 19% done with 179167 blocks to go, block date 2019-04-20T02:50:24Z
+[NioClientManager] INFO org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 20% done with 176955 blocks to go, block date 2019-04-20T03:19:20Z
+[NioClientManager] INFO org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 21% done with 174743 blocks to go, block date 2019-04-20T03:50:54Z
+[AbstractTimeoutHandler timeouts] INFO org.bitcoinj.core.PeerSocketHandler - [45.76.191.201]:18333: Timed out
+[AbstractTimeoutHandler timeouts] INFO org.bitcoinj.core.PeerGroup - [45.76.191.201]:18333: Peer died      (13 connected, 0 pending, 12 max)
+[AbstractTimeoutHandler timeouts] INFO org.bitcoinj.core.PeerSocketHandler - [fd87:d87e:eb43:6a8b:d278:3f7a:f892:8f80]:18333: Timed out
+[AbstractTimeoutHandler timeouts] INFO org.bitcoinj.core.PeerGroup - [fd87:d87e:eb43:6a8b:d278:3f7a:f892:8f80]:18333: Peer died      (13 connected, 0 pending, 12 max)
+[AbstractTimeoutHandler timeouts] INFO org.bitcoinj.core.PeerSocketHandler - [2001:0:9d38:90d7:433:113d:355b:3ed4]:18333: Timed out
+[AbstractTimeoutHandler timeouts] INFO org.bitcoinj.core.PeerGroup - [2001:0:9d38:90d7:433:113d:355b:3ed4]:18333: Peer died      (13 connected, 0 pending, 12 max)
+[AbstractTimeoutHandler timeouts] INFO org.bitcoinj.core.PeerSocketHandler - [2402:1f00:8001:36b:0:0:0:0]:18333: Timed out
+[AbstractTimeoutHandler timeouts] INFO org.bitcoinj.core.PeerGroup - [2402:1f00:8001:36b:0:0:0:0]:18333: Peer died      (13 connected, 0 pending, 12 max)
+[NioClientManager] INFO org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 22% done with 172531 blocks to go, block date 2019-04-20T04:24:28Z
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup$ChainDownloadSpeedCalculator - 10000 blocks/sec, 0 tx/sec, 0 pre-filtered tx/sec, avg/last 391.41/781.25 kilobytes per sec, chain/common height 1499504/1670698 (warming up 10 more seconds)
+[NioClientManager] INFO org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 23% done with 170319 blocks to go, block date 2019-04-20T05:21:57Z
+[Wallet autosave thread] INFO org.bitcoinj.wallet.WalletFiles - Background saving wallet; last seen block is height 1501504, date 2019-04-20T05:56:18Z, hash 00000000000e78b6d89affb89d744f2839a8552cc2d91c2275200e359747a96f
+[Wallet autosave thread] INFO org.bitcoinj.wallet.WalletFiles - Save completed in 80.75 ms
+[NioClientManager] INFO org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 24% done with 168107 blocks to go, block date 2019-04-20T06:37:35Z
+[NioClientManager] INFO org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 25% done with 165895 blocks to go, block date 2019-04-20T08:28:04Z
+[NioClientManager] INFO org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 26% done with 163683 blocks to go, block date 2019-04-20T11:37:26Z
+[NioClientManager] INFO org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 27% done with 161471 blocks to go, block date 2019-04-21T01:10:26Z
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup$ChainDownloadSpeedCalculator - 10000 blocks/sec, 0 tx/sec, 0 pre-filtered tx/sec, avg/last 469.38/781.25 kilobytes per sec, chain/common height 1509504/1670698 (warming up 9 more seconds)
+[NioClientManager] INFO org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 28% done with 159259 blocks to go, block date 2019-04-23T16:32:07Z
+[NioClientManager] INFO org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 29% done with 157047 blocks to go, block date 2019-05-01T12:34:17Z
+[NioClientManager] INFO org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 30% done with 154835 blocks to go, block date 2019-05-14T19:19:13Z
+[NioClientManager] INFO org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 31% done with 152623 blocks to go, block date 2019-05-23T15:13:16Z
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup$ChainDownloadSpeedCalculator - 10000 blocks/sec, 0 tx/sec, 0 pre-filtered tx/sec, avg/last 547.34/781.25 kilobytes per sec, chain/common height 1519504/1670698 (warming up 8 more seconds)
+[NioClientManager] INFO org.bitcoinj.params.AbstractBitcoinNetParams - Difficulty hit proof of work limit: 10ee1a16a76a76a76a76a76a76a76a76a76a76a76a76a76a76a76a76a
+[NioClientManager] INFO org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 32% done with 150411 blocks to go, block date 2019-06-07T07:47:23Z
+[NioClientManager] INFO org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 33% done with 148199 blocks to go, block date 2019-06-07T09:01:28Z
+[NioClientManager] INFO org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 34% done with 145988 blocks to go, block date 2019-06-07T10:16:01Z
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup$ChainDownloadSpeedCalculator - 6000 blocks/sec, 0 tx/sec, 0 pre-filtered tx/sec, avg/last 594.06/468.75 kilobytes per sec, chain/common height 1525504/1670698 (warming up 7 more seconds)
+[NioClientManager] INFO org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 35% done with 143776 blocks to go, block date 2019-06-07T11:13:28Z
+[NioClientManager] INFO org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 36% done with 141564 blocks to go, block date 2019-06-07T12:14:49Z
+[NioClientManager] INFO org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 37% done with 139352 blocks to go, block date 2019-06-07T13:38:58Z
+[NioClientManager] INFO org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 38% done with 137140 blocks to go, block date 2019-06-07T15:35:26Z
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup$ChainDownloadSpeedCalculator - 10000 blocks/sec, 0 tx/sec, 0 pre-filtered tx/sec, avg/last 672.03/781.25 kilobytes per sec, chain/common height 1535504/1670698 (warming up 6 more seconds)
+[NioClientManager] INFO org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 39% done with 134928 blocks to go, block date 2019-06-07T17:57:49Z
+[NioClientManager] INFO org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 40% done with 132716 blocks to go, block date 2019-06-07T22:24:34Z
+[NioClientManager] INFO org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 41% done with 130504 blocks to go, block date 2019-06-08T16:54:23Z
+[NioClientManager] INFO org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 42% done with 128292 blocks to go, block date 2019-06-11T17:28:42Z
+[NioClientManager] INFO org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 43% done with 126080 blocks to go, block date 2019-06-18T11:13:51Z
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup$ChainDownloadSpeedCalculator - 10000 blocks/sec, 0 tx/sec, 0 pre-filtered tx/sec, avg/last 750.00/781.25 kilobytes per sec, chain/common height 1545504/1670698 (warming up 5 more seconds)
+[NioClientManager] INFO org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 44% done with 123868 blocks to go, block date 2019-06-18T11:56:19Z
+[Wallet autosave thread] INFO org.bitcoinj.wallet.WalletFiles - Background saving wallet; last seen block is height 1547504, date 2019-06-18T12:24:49Z, hash 000000000006b10ee0aed1c843d378082b2cb35e389e4c0f14d7207e6daa443a
+[Wallet autosave thread] INFO org.bitcoinj.wallet.WalletFiles - Save completed in 36.76 ms
+[NioClientManager] INFO org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 45% done with 121656 blocks to go, block date 2019-06-18T13:16:31Z
+[NioClientManager] INFO org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 46% done with 119444 blocks to go, block date 2019-06-18T14:10:50Z
+[NioClientManager] INFO org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 47% done with 117232 blocks to go, block date 2019-06-18T14:54:04Z
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup$ChainDownloadSpeedCalculator - 10000 blocks/sec, 0 tx/sec, 0 pre-filtered tx/sec, avg/last 750.00/781.25 kilobytes per sec, chain/common height 1555504/1670698 (warming up 4 more seconds)
+[NioClientManager] INFO org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 48% done with 115020 blocks to go, block date 2019-06-18T16:00:05Z
+[NioClientManager] INFO org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 49% done with 112808 blocks to go, block date 2019-06-18T18:57:39Z
+[NioClientManager] INFO org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 50% done with 110597 blocks to go, block date 2019-06-18T23:59:54Z
+[NioClientManager] INFO org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 51% done with 108385 blocks to go, block date 2019-06-19T11:53:14Z
+[NioClientManager] INFO org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 52% done with 106173 blocks to go, block date 2019-06-22T14:47:34Z
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup$ChainDownloadSpeedCalculator - 10000 blocks/sec, 0 tx/sec, 0 pre-filtered tx/sec, avg/last 750.00/781.25 kilobytes per sec, chain/common height 1565504/1670698 (warming up 3 more seconds)
+[NioClientManager] INFO org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 53% done with 103961 blocks to go, block date 2019-06-30T11:14:37Z
+[NioClientManager] INFO org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 54% done with 101749 blocks to go, block date 2019-07-14T11:05:54Z
+[NioClientManager] INFO org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 55% done with 99537 blocks to go, block date 2019-07-27T02:08:51Z
+[NioClientManager] INFO org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 56% done with 97325 blocks to go, block date 2019-08-09T02:50:30Z
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup$ChainDownloadSpeedCalculator - 10000 blocks/sec, 0 tx/sec, 0 pre-filtered tx/sec, avg/last 744.33/781.25 kilobytes per sec, chain/common height 1575504/1670698 (warming up 2 more seconds)
+[NioClientManager] INFO org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 57% done with 95113 blocks to go, block date 2019-08-23T20:44:57Z
+[NioClientManager] INFO org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 58% done with 92901 blocks to go, block date 2019-09-10T09:47:19Z
+[NioClientManager] INFO org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 59% done with 90689 blocks to go, block date 2019-09-29T10:06:04Z
+[NioClientManager] INFO org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 60% done with 88477 blocks to go, block date 2019-10-11T14:51:40Z
+[NioClientManager] INFO org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 61% done with 86265 blocks to go, block date 2019-10-30T12:31:22Z
+[NioClientManager] INFO org.bitcoinj.params.AbstractBitcoinNetParams - Difficulty hit proof of work limit: 16a29554e04e04e04e04e04e04e04e04e04e04e04e04e04e04e04e04e
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup$ChainDownloadSpeedCalculator - 9717 blocks/sec, 0 tx/sec, 0 pre-filtered tx/sec, avg/last 747.79/759.14 kilobytes per sec, chain/common height 1585221/1670698 (warming up 1 more seconds)
+[NioClientManager] INFO org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 62% done with 84053 blocks to go, block date 2019-10-31T12:33:21Z
+[NioClientManager] INFO org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 63% done with 81841 blocks to go, block date 2019-10-31T14:07:45Z
+[NioClientManager] INFO org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 64% done with 79629 blocks to go, block date 2019-10-31T16:13:12Z
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup$ChainDownloadSpeedCalculator - 6283 blocks/sec, 0 tx/sec, 0 pre-filtered tx/sec, avg/last 718.75/490.86 kilobytes per sec, chain/common height 1591504/1670698 (warming up 0 more seconds)
+[NioClientManager] INFO org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 65% done with 77417 blocks to go, block date 2019-10-31T18:28:19Z
+[Wallet autosave thread] INFO org.bitcoinj.wallet.WalletFiles - Background saving wallet; last seen block is height 1594908, date 2019-10-31T20:09:35Z, hash 000000000003fe8aa3cae284e81f6afe21be95ce0202629af1a2e1255f4d580e
+[NioClientManager] INFO org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 66% done with 75205 blocks to go, block date 2019-10-31T20:47:25Z
+[Wallet autosave thread] INFO org.bitcoinj.wallet.WalletFiles - Save completed in 13.74 ms
+[NioClientManager] INFO org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 67% done with 72994 blocks to go, block date 2019-10-31T23:14:21Z
+[NioClientManager] INFO org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 68% done with 70782 blocks to go, block date 2019-11-01T01:53:09Z
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup$ChainDownloadSpeedCalculator - 10000 blocks/sec, 0 tx/sec, 0 pre-filtered tx/sec, avg/last 718.75/781.25 kilobytes per sec, chain/common height 1601504/1670698, not stalled (threshold <0.78 KB/sec for 10 seconds)
+[NioClientManager] INFO org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 69% done with 68570 blocks to go, block date 2019-11-01T06:50:17Z
+[NioClientManager] INFO org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 70% done with 66358 blocks to go, block date 2019-11-01T20:16:42Z
+[NioClientManager] INFO org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 71% done with 64146 blocks to go, block date 2019-11-04T21:19:27Z
+[NioClientManager] INFO org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 72% done with 61934 blocks to go, block date 2019-11-17T04:08:52Z
+[NioClientManager] INFO org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 73% done with 59722 blocks to go, block date 2019-12-03T09:41:04Z
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup$ChainDownloadSpeedCalculator - 10000 blocks/sec, 0 tx/sec, 0 pre-filtered tx/sec, avg/last 718.75/781.25 kilobytes per sec, chain/common height 1611504/1670698, not stalled (threshold <0.78 KB/sec for 10 seconds)
+[NioClientManager] INFO org.bitcoinj.params.AbstractBitcoinNetParams - Difficulty hit proof of work limit: 11faa4d2d82d82d82d82d82d82d82d82d82d82d82d82d82d82d82d82d
+[NioClientManager] INFO org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 74% done with 57510 blocks to go, block date 2019-12-18T00:39:15Z
+[NioClientManager] INFO org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 75% done with 55298 blocks to go, block date 2019-12-18T01:06:51Z
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup$ChainDownloadSpeedCalculator - 5327 blocks/sec, 0 tx/sec, 0 pre-filtered tx/sec, avg/last 713.49/416.17 kilobytes per sec, chain/common height 1616831/1670698, not stalled (threshold <0.78 KB/sec for 10 seconds)
+[NioClientManager] INFO org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 76% done with 53086 blocks to go, block date 2019-12-18T02:23:31Z
+[NioClientManager] INFO org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 77% done with 50874 blocks to go, block date 2019-12-18T05:00:55Z
+[NioClientManager] INFO org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 78% done with 48662 blocks to go, block date 2019-12-18T08:15:55Z
+[NioClientManager] INFO org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 79% done with 46450 blocks to go, block date 2019-12-18T10:12:05Z
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup$ChainDownloadSpeedCalculator - 8673 blocks/sec, 0 tx/sec, 0 pre-filtered tx/sec, avg/last 703.13/677.58 kilobytes per sec, chain/common height 1625504/1670698, not stalled (threshold <0.78 KB/sec for 10 seconds)
+[NioClientManager] INFO org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 80% done with 44238 blocks to go, block date 2019-12-18T13:58:11Z
+[NioClientManager] INFO org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 81% done with 42026 blocks to go, block date 2019-12-19T05:50:31Z
+[NioClientManager] INFO org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 82% done with 39814 blocks to go, block date 2019-12-20T09:16:35Z
+[NioClientManager] INFO org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 83% done with 37602 blocks to go, block date 2019-12-21T02:48:14Z
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup$ChainDownloadSpeedCalculator - 9119 blocks/sec, 0 tx/sec, 0 pre-filtered tx/sec, avg/last 696.24/712.42 kilobytes per sec, chain/common height 1634624/1670698, not stalled (threshold <0.78 KB/sec for 10 seconds)
+[NioClientManager] INFO org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 84% done with 35391 blocks to go, block date 2019-12-25T23:04:59Z
+[Wallet autosave thread] INFO org.bitcoinj.wallet.WalletFiles - Background saving wallet; last seen block is height 1637504, date 2020-01-01T10:27:51Z, hash 000000000000009f261ee4259523553a4ea935ba9e131c7e474d997bda0c269b
+[NioClientManager] INFO org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 85% done with 33179 blocks to go, block date 2020-01-01T11:02:49Z
+[Wallet autosave thread] INFO org.bitcoinj.wallet.WalletFiles - Save completed in 12.56 ms
+[NioClientManager] INFO org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 86% done with 30967 blocks to go, block date 2020-01-09T01:03:41Z
+[NioClientManager] INFO org.bitcoinj.core.PeerGroup - [45.76.191.201]:18333: Peer died      (13 connected, 0 pending, 12 max)
+[NioClientManager] WARN org.bitcoinj.net.NioClientManager - Failed to connect with exception: java.nio.channels.ClosedChannelException: null
+java.nio.channels.ClosedChannelException
+	at java.base/sun.nio.ch.SocketChannelImpl.ensureOpen(SocketChannelImpl.java:160)
+	at java.base/sun.nio.ch.SocketChannelImpl.beginFinishConnect(SocketChannelImpl.java:726)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:772)
+	at org.bitcoinj.net.NioClientManager.handleKey(NioClientManager.java:64)
+	at org.bitcoinj.net.NioClientManager.run(NioClientManager.java:122)
+	at com.google.common.util.concurrent.AbstractExecutionThreadService$1$2.run(AbstractExecutionThreadService.java:66)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:119)
+	at org.bitcoinj.utils.ContextPropagatingThreadFactory$1.run(ContextPropagatingThreadFactory.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+[NioClientManager] INFO org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 87% done with 28755 blocks to go, block date 2020-01-09T01:34:57Z
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup$ChainDownloadSpeedCalculator - 8881 blocks/sec, 0 tx/sec, 0 pre-filtered tx/sec, avg/last 687.50/693.83 kilobytes per sec, chain/common height 1643504/1670698, not stalled (threshold <0.78 KB/sec for 10 seconds)
+[NioClientManager] INFO org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 88% done with 26543 blocks to go, block date 2020-01-09T02:09:16Z
+[NioClientManager] INFO org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 89% done with 24331 blocks to go, block date 2020-01-09T02:50:47Z
+[NioClientManager] INFO org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 90% done with 22119 blocks to go, block date 2020-01-09T04:08:57Z
+[NioClientManager] INFO org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 91% done with 19907 blocks to go, block date 2020-01-09T05:54:33Z
+[NioClientManager] INFO org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 92% done with 17695 blocks to go, block date 2020-01-09T08:00:04Z
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup$ChainDownloadSpeedCalculator - 10000 blocks/sec, 0 tx/sec, 0 pre-filtered tx/sec, avg/last 687.50/781.25 kilobytes per sec, chain/common height 1653504/1670698, not stalled (threshold <0.78 KB/sec for 10 seconds)
+[NioClientManager] INFO org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 93% done with 15483 blocks to go, block date 2020-01-09T11:04:45Z
+[NioClientManager] INFO org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 94% done with 13271 blocks to go, block date 2020-01-09T21:24:42Z
+[NioClientManager] INFO org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 95% done with 11059 blocks to go, block date 2020-01-11T23:55:29Z
+[NioClientManager] INFO org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 96% done with 8847 blocks to go, block date 2020-01-18T20:14:08Z
+[NioClientManager] INFO org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 97% done with 6635 blocks to go, block date 2020-01-27T21:14:25Z
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup$ChainDownloadSpeedCalculator - 10558 blocks/sec, 0 tx/sec, 0 pre-filtered tx/sec, avg/last 691.86/824.84 kilobytes per sec, chain/common height 1664063/1670698, not stalled (threshold <0.78 KB/sec for 10 seconds)
+[NioClientManager] INFO org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 98% done with 4423 blocks to go, block date 2020-02-20T02:15:03Z
+[NioClientManager] INFO org.bitcoinj.core.Peer - Passed the fast catchup time (2020-02-26T14:40:27Z) at height 1666769, discarding 736 headers and requesting full blocks
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup$ChainDownloadSpeedCalculator - 2863 blocks/sec, 0 tx/sec, 43049 pre-filtered tx/sec, avg/last 638.31/223.67 kilobytes per sec, chain/common height 1666925/1670698, not stalled (threshold <0.78 KB/sec for 10 seconds)
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup$ChainDownloadSpeedCalculator - 283 blocks/sec, 0 tx/sec, 67901 pre-filtered tx/sec, avg/last 591.44/22.11 kilobytes per sec, chain/common height 1667208/1670698, not stalled (threshold <0.78 KB/sec for 10 seconds)
+[NioClientManager] WARN org.bitcoinj.core.AbstractBlockChain - Block does not connect: 000000000000007dc67c6b10c9f2f25c56ac66f314fb48257ae172b19119bf02 prev 000000000000013265d50933d7cdfb045e37d5ba9b0161f7ac3f2f6c2b12ba5a
+[Wallet autosave thread] INFO org.bitcoinj.wallet.WalletFiles - Background saving wallet; last seen block is height 1667295, date 2020-03-03T00:34:12Z, hash 00000000000000d14d9b71f2a5461010c420486a39727a58b02fc754f8878502
+[Wallet autosave thread] INFO org.bitcoinj.wallet.WalletFiles - Save completed in 8.025 ms
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup$ChainDownloadSpeedCalculator - 360 blocks/sec, 0 tx/sec, 37044 pre-filtered tx/sec, avg/last 516.13/28.13 kilobytes per sec, chain/common height 1667568/1670698, not stalled (threshold <0.78 KB/sec for 10 seconds)
+[NioClientManager] INFO org.bitcoinj.wallet.Wallet - Received tx for 0.0001 BTC: f550cb488d9917512f67ef9ed9b085e4741db64241d6488c06aa8845e0865e4f [0] in block 000000000021abcce733fe756ab2597ba181d4a262143cd2506e52bd8280cf2a
+[NioClientManager] INFO org.bitcoinj.wallet.Wallet -   tx f550cb488d9917512f67ef9ed9b085e4741db64241d6488c06aa8845e0865e4f ->unspent
+[NioClientManager] INFO org.bitcoinj.wallet.Wallet - Balance is now: 0.0001 BTC
+[NioClientManager] INFO org.bitcoinj.wallet.WalletFiles - Saving wallet; last seen block is height 1667640, date 2020-03-04T15:45:07Z, hash 000000000021abcce733fe756ab2597ba181d4a262143cd2506e52bd8280cf2a
+[NioClientManager] INFO org.bitcoinj.wallet.WalletFiles - Save completed in 24.02 ms
+[NioClientManager] INFO org.bitcoinj.wallet.Wallet - Received tx for -0.0000122 BTC: 474eda777a0c9356aaef6c4b57847d11a3525358b7926c4526aacf1cb6eb4aa7 [0] in block 00000000000ee7b75c33f80d0385849fb27b212dbbee175c87c4e1727fc812e2
+[NioClientManager] INFO org.bitcoinj.wallet.Wallet -   marked f550cb488d9917512f67ef9ed9b085e4741db64241d6488c06aa8845e0865e4f:1 as spent by 474eda777a0c9356aaef6c4b57847d11a3525358b7926c4526aacf1cb6eb4aa7
+[NioClientManager] INFO org.bitcoinj.wallet.Wallet -   f550cb488d9917512f67ef9ed9b085e4741db64241d6488c06aa8845e0865e4f prevtx <-unspent ->spent
+[NioClientManager] INFO org.bitcoinj.wallet.Wallet -   tx 474eda777a0c9356aaef6c4b57847d11a3525358b7926c4526aacf1cb6eb4aa7 ->unspent
+[NioClientManager] INFO org.bitcoinj.wallet.Wallet - Balance is now: 0.0000878 BTC
+[NioClientManager] INFO org.bitcoinj.wallet.WalletFiles - Saving wallet; last seen block is height 1667649, date 2020-03-04T17:22:21Z, hash 00000000000ee7b75c33f80d0385849fb27b212dbbee175c87c4e1727fc812e2
+[NioClientManager] INFO org.bitcoinj.wallet.WalletFiles - Save completed in 9.059 ms
+[NioClientManager] INFO org.bitcoinj.wallet.Wallet - Received tx for -0.0000118 BTC: 7fb2aaa68a229206f421b38c703d6e12b05a3b06a5c9aaa83e4d4e490a5776e9 [0] in block 00000000000001c9b0c246ead927880f08fcb503791391327a3da26fec390a84
+[NioClientManager] INFO org.bitcoinj.wallet.Wallet -   marked 474eda777a0c9356aaef6c4b57847d11a3525358b7926c4526aacf1cb6eb4aa7:0 as spent by 7fb2aaa68a229206f421b38c703d6e12b05a3b06a5c9aaa83e4d4e490a5776e9
+[NioClientManager] INFO org.bitcoinj.wallet.Wallet -   474eda777a0c9356aaef6c4b57847d11a3525358b7926c4526aacf1cb6eb4aa7 prevtx <-unspent ->spent
+[NioClientManager] INFO org.bitcoinj.wallet.Wallet -   tx 7fb2aaa68a229206f421b38c703d6e12b05a3b06a5c9aaa83e4d4e490a5776e9 ->unspent
+[NioClientManager] INFO org.bitcoinj.wallet.Wallet - Balance is now: 0.000076 BTC
+[NioClientManager] INFO org.bitcoinj.wallet.WalletFiles - Saving wallet; last seen block is height 1667650, date 2020-03-04T17:32:22Z, hash 00000000000001c9b0c246ead927880f08fcb503791391327a3da26fec390a84
+[NioClientManager] INFO org.bitcoinj.wallet.WalletFiles - Save completed in 4.835 ms
+[NioClientManager] INFO org.bitcoinj.wallet.Wallet - Received tx for -0.0000118 BTC: b4d08a8ca7eb34b50ed1bfcc3852de1fdcb8288883f736751dbaa2944b46a3de [0] in block 000000000000028374db8ab6d9d7ad332178e67a1358a9b18c963baad3a67d87
+[NioClientManager] INFO org.bitcoinj.wallet.Wallet -   marked 7fb2aaa68a229206f421b38c703d6e12b05a3b06a5c9aaa83e4d4e490a5776e9:1 as spent by b4d08a8ca7eb34b50ed1bfcc3852de1fdcb8288883f736751dbaa2944b46a3de
+[NioClientManager] INFO org.bitcoinj.wallet.Wallet -   7fb2aaa68a229206f421b38c703d6e12b05a3b06a5c9aaa83e4d4e490a5776e9 prevtx <-unspent ->spent
+[NioClientManager] INFO org.bitcoinj.wallet.Wallet -   tx b4d08a8ca7eb34b50ed1bfcc3852de1fdcb8288883f736751dbaa2944b46a3de ->unspent
+[NioClientManager] INFO org.bitcoinj.wallet.Wallet - Balance is now: 0.0000642 BTC
+[NioClientManager] INFO org.bitcoinj.wallet.WalletFiles - Saving wallet; last seen block is height 1667652, date 2020-03-04T17:48:08Z, hash 000000000000028374db8ab6d9d7ad332178e67a1358a9b18c963baad3a67d87
+[NioClientManager] INFO org.bitcoinj.wallet.WalletFiles - Save completed in 4.027 ms
+[NioClientManager] INFO org.bitcoinj.wallet.Wallet - Received tx for -0.0000118 BTC: 8bc1694ac5b7137e819cc261f9e1edce5b9b235410497a061d62406fa5a73f65 [0] in block 0000000000000228c61b922dfab5ee15a8867352330a63694e9718231752d066
+[NioClientManager] INFO org.bitcoinj.wallet.Wallet -   marked b4d08a8ca7eb34b50ed1bfcc3852de1fdcb8288883f736751dbaa2944b46a3de:0 as spent by 8bc1694ac5b7137e819cc261f9e1edce5b9b235410497a061d62406fa5a73f65
+[NioClientManager] INFO org.bitcoinj.wallet.Wallet -   b4d08a8ca7eb34b50ed1bfcc3852de1fdcb8288883f736751dbaa2944b46a3de prevtx <-unspent ->spent
+[NioClientManager] INFO org.bitcoinj.wallet.Wallet -   tx 8bc1694ac5b7137e819cc261f9e1edce5b9b235410497a061d62406fa5a73f65 ->unspent
+[NioClientManager] INFO org.bitcoinj.wallet.Wallet - Balance is now: 0.0000524 BTC
+[NioClientManager] INFO org.bitcoinj.wallet.WalletFiles - Saving wallet; last seen block is height 1667659, date 2020-03-04T18:10:27Z, hash 0000000000000228c61b922dfab5ee15a8867352330a63694e9718231752d066
+[NioClientManager] INFO org.bitcoinj.wallet.WalletFiles - Save completed in 3.703 ms
+[NioClientManager] INFO org.bitcoinj.wallet.Wallet - Received tx for -0.0000118 BTC: 098ffa98eaf459583f327a9500b5809fcf62c2fea63439456dae2723a2a21c5a [0] in block 00000000000001de39b5903e4c18e7b7b1aba4f961c8ee2fb5d46795719178dd
+[NioClientManager] INFO org.bitcoinj.wallet.Wallet -   marked 8bc1694ac5b7137e819cc261f9e1edce5b9b235410497a061d62406fa5a73f65:0 as spent by 098ffa98eaf459583f327a9500b5809fcf62c2fea63439456dae2723a2a21c5a
+[NioClientManager] INFO org.bitcoinj.wallet.Wallet -   8bc1694ac5b7137e819cc261f9e1edce5b9b235410497a061d62406fa5a73f65 prevtx <-unspent ->spent
+[NioClientManager] INFO org.bitcoinj.wallet.Wallet -   tx 098ffa98eaf459583f327a9500b5809fcf62c2fea63439456dae2723a2a21c5a ->unspent
+[NioClientManager] INFO org.bitcoinj.wallet.Wallet - Balance is now: 0.0000406 BTC
+[NioClientManager] INFO org.bitcoinj.wallet.Wallet - Received tx for 0.01 BTC: 70f06ed3b6184644935ede05ca3aa5e186a9fbd7eacc3075632234cfebb5c608 [1] in block 00000000000001de39b5903e4c18e7b7b1aba4f961c8ee2fb5d46795719178dd
+[NioClientManager] INFO org.bitcoinj.wallet.Wallet -   tx 70f06ed3b6184644935ede05ca3aa5e186a9fbd7eacc3075632234cfebb5c608 ->unspent
+[NioClientManager] INFO org.bitcoinj.wallet.Wallet - Balance is now: 0.0100406 BTC
+[NioClientManager] INFO org.bitcoinj.wallet.Wallet - Received tx for 0.01 BTC: 8628b1bfb84c2802c380a9d3bfcc744bd88f4ee945605c4dd6ca0ae742286346 [2] in block 00000000000001de39b5903e4c18e7b7b1aba4f961c8ee2fb5d46795719178dd
+[NioClientManager] INFO org.bitcoinj.wallet.Wallet -   tx 8628b1bfb84c2802c380a9d3bfcc744bd88f4ee945605c4dd6ca0ae742286346 ->unspent
+[NioClientManager] INFO org.bitcoinj.wallet.Wallet - Balance is now: 0.0200406 BTC
+[NioClientManager] INFO org.bitcoinj.wallet.WalletFiles - Saving wallet; last seen block is height 1667699, date 2020-03-04T21:56:19Z, hash 00000000000001de39b5903e4c18e7b7b1aba4f961c8ee2fb5d46795719178dd
+[NioClientManager] INFO org.bitcoinj.wallet.WalletFiles - Save completed in 5.736 ms
+[NioClientManager] INFO org.bitcoinj.wallet.Wallet - Received tx for -0.0000118 BTC: a08a8ccba91f0dbc2fc382883782db50e172e457a5094d6fbcf78927bb6470a3 [0] in block 000000000000028fefc7ee46eaf53a8b4bee81f8ec5d610d6f83dfe5d6c07f85
+[NioClientManager] INFO org.bitcoinj.wallet.Wallet -   marked 70f06ed3b6184644935ede05ca3aa5e186a9fbd7eacc3075632234cfebb5c608:1 as spent by a08a8ccba91f0dbc2fc382883782db50e172e457a5094d6fbcf78927bb6470a3
+[NioClientManager] INFO org.bitcoinj.wallet.Wallet -   70f06ed3b6184644935ede05ca3aa5e186a9fbd7eacc3075632234cfebb5c608 prevtx <-unspent ->spent
+[NioClientManager] INFO org.bitcoinj.wallet.Wallet -   tx a08a8ccba91f0dbc2fc382883782db50e172e457a5094d6fbcf78927bb6470a3 ->unspent
+[NioClientManager] INFO org.bitcoinj.wallet.Wallet - Balance is now: 0.0200288 BTC
+[NioClientManager] INFO org.bitcoinj.wallet.WalletFiles - Saving wallet; last seen block is height 1667701, date 2020-03-04T22:04:48Z, hash 000000000000028fefc7ee46eaf53a8b4bee81f8ec5d610d6f83dfe5d6c07f85
+[NioClientManager] INFO org.bitcoinj.wallet.WalletFiles - Save completed in 4.980 ms
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup$ChainDownloadSpeedCalculator - 200 blocks/sec, 9 tx/sec, 12228 pre-filtered tx/sec, avg/last 439.75/17.46 kilobytes per sec, chain/common height 1667768/1670698, not stalled (threshold <0.78 KB/sec for 10 seconds)
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup$ChainDownloadSpeedCalculator - 500 blocks/sec, 0 tx/sec, 27120 pre-filtered tx/sec, avg/last 402.03/39.06 kilobytes per sec, chain/common height 1668268/1670698, not stalled (threshold <0.78 KB/sec for 10 seconds)
+[NioClientManager] INFO org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 99% done with 2211 blocks to go, block date 2020-03-07T04:27:15Z
+[NioClientManager] INFO org.bitcoinj.wallet.Wallet - Received tx for -0.0000118 BTC: 9ad22d615fddc469c348145ef1139173ac6bd73c5173c93308a7552477a78701 [0] in block 00000000000001b3ab0eed86dd6796be08d6e5340a4fe13e55bacffeb043aac0
+[NioClientManager] INFO org.bitcoinj.wallet.Wallet -   marked a08a8ccba91f0dbc2fc382883782db50e172e457a5094d6fbcf78927bb6470a3:1 as spent by 9ad22d615fddc469c348145ef1139173ac6bd73c5173c93308a7552477a78701
+[NioClientManager] INFO org.bitcoinj.wallet.Wallet -   a08a8ccba91f0dbc2fc382883782db50e172e457a5094d6fbcf78927bb6470a3 prevtx <-unspent ->spent
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup$ChainDownloadSpeedCalculator - 458 blocks/sec, 0 tx/sec, 21029 pre-filtered tx/sec, avg/last 337.85/35.78 kilobytes per sec, chain/common height 1668727/1670698, not stalled (threshold <0.78 KB/sec for 10 seconds)
+[NioClientManager] INFO org.bitcoinj.wallet.Wallet -   tx 9ad22d615fddc469c348145ef1139173ac6bd73c5173c93308a7552477a78701 ->unspent
+[NioClientManager] INFO org.bitcoinj.wallet.Wallet - Balance is now: 0.020017 BTC
+[NioClientManager] INFO org.bitcoinj.wallet.Wallet - Received tx for -0.0000118 BTC: 5835128ff2b11ab1e3158e47a8361238c1a5b64e176559ff70f060387ae516f8 [1] in block 00000000000001b3ab0eed86dd6796be08d6e5340a4fe13e55bacffeb043aac0
+[NioClientManager] INFO org.bitcoinj.wallet.Wallet -   marked 8628b1bfb84c2802c380a9d3bfcc744bd88f4ee945605c4dd6ca0ae742286346:1 as spent by 5835128ff2b11ab1e3158e47a8361238c1a5b64e176559ff70f060387ae516f8
+[NioClientManager] INFO org.bitcoinj.wallet.Wallet -   8628b1bfb84c2802c380a9d3bfcc744bd88f4ee945605c4dd6ca0ae742286346 prevtx <-unspent ->spent
+[NioClientManager] INFO org.bitcoinj.wallet.Wallet -   tx 5835128ff2b11ab1e3158e47a8361238c1a5b64e176559ff70f060387ae516f8 ->unspent
+[NioClientManager] INFO org.bitcoinj.wallet.Wallet - Balance is now: 0.0200052 BTC
+[NioClientManager] INFO org.bitcoinj.wallet.WalletFiles - Saving wallet; last seen block is height 1668727, date 2020-03-07T16:24:16Z, hash 00000000000001b3ab0eed86dd6796be08d6e5340a4fe13e55bacffeb043aac0
+[NioClientManager] INFO org.bitcoinj.wallet.WalletFiles - Save completed in 9.017 ms
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup$ChainDownloadSpeedCalculator - 461 blocks/sec, 2 tx/sec, 21971 pre-filtered tx/sec, avg/last 270.26/36.47 kilobytes per sec, chain/common height 1669187/1670698, not stalled (threshold <0.78 KB/sec for 10 seconds)
+[Wallet autosave thread] INFO org.bitcoinj.wallet.WalletFiles - Background saving wallet; last seen block is height 1669324, date 2020-03-09T03:18:46Z, hash 000000000000005d4a3a411c22dafff3c615559af4d826c72aeb490e5c37fa6d
+[Wallet autosave thread] INFO org.bitcoinj.wallet.WalletFiles - Save completed in 10.24 ms
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup$ChainDownloadSpeedCalculator - 312 blocks/sec, 0 tx/sec, 43527 pre-filtered tx/sec, avg/last 203.31/24.38 kilobytes per sec, chain/common height 1669499/1670698, not stalled (threshold <0.78 KB/sec for 10 seconds)
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup$ChainDownloadSpeedCalculator - 269 blocks/sec, 1 tx/sec, 57666 pre-filtered tx/sec, avg/last 127.30/21.15 kilobytes per sec, chain/common height 1669768/1670698, not stalled (threshold <0.78 KB/sec for 10 seconds)
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup$ChainDownloadSpeedCalculator - 423 blocks/sec, 0 tx/sec, 49480 pre-filtered tx/sec, avg/last 48.13/33.05 kilobytes per sec, chain/common height 1670191/1670698, not stalled (threshold <0.78 KB/sec for 10 seconds)
+[NioClientManager] INFO org.bitcoinj.wallet.Wallet - Received tx for -0.00000244 BTC: aaccd62782e544b42fa57477ea02afa52882c99ba34c539fd5a6701ef3e2e73e [0] in block 00000000b7c5611fa3a197de0b66500211b2d26a6ee84f274cacebad9a3a6a6f
+[NioClientManager] INFO org.bitcoinj.wallet.Wallet -   marked 5835128ff2b11ab1e3158e47a8361238c1a5b64e176559ff70f060387ae516f8:1 as spent by aaccd62782e544b42fa57477ea02afa52882c99ba34c539fd5a6701ef3e2e73e
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup$ChainDownloadSpeedCalculator - 341 blocks/sec, 0 tx/sec, 41974 pre-filtered tx/sec, avg/last 28.42/26.64 kilobytes per sec, chain/common height 1670533/1670698, not stalled (threshold <0.78 KB/sec for 10 seconds)
+[NioClientManager] INFO org.bitcoinj.wallet.Wallet -   5835128ff2b11ab1e3158e47a8361238c1a5b64e176559ff70f060387ae516f8 prevtx <-unspent ->spent
+[NioClientManager] INFO org.bitcoinj.wallet.Wallet -   tx aaccd62782e544b42fa57477ea02afa52882c99ba34c539fd5a6701ef3e2e73e ->unspent
+[NioClientManager] INFO org.bitcoinj.wallet.Wallet - Balance is now: 0.02000276 BTC
+[NioClientManager] INFO org.bitcoinj.wallet.WalletFiles - Saving wallet; last seen block is height 1670533, date 2020-03-20T09:25:41Z, hash 00000000b7c5611fa3a197de0b66500211b2d26a6ee84f274cacebad9a3a6a6f
+[NioClientManager] INFO org.bitcoinj.wallet.WalletFiles - Save completed in 8.493 ms
+[NioClientManager] INFO org.bitcoinj.wallet.Wallet - Received tx for -0.00000244 BTC: 5f85bf9598f16cfe155b1e186f3d51598f37900a63b84e3d144f10c77e2e31c2 [0] in block 000000006e3db29af9fd7a1b862b428d00bda24e6956a689b2a6ce56abb062f1
+[NioClientManager] INFO org.bitcoinj.wallet.Wallet -   marked 9ad22d615fddc469c348145ef1139173ac6bd73c5173c93308a7552477a78701:0 as spent by 5f85bf9598f16cfe155b1e186f3d51598f37900a63b84e3d144f10c77e2e31c2
+[NioClientManager] INFO org.bitcoinj.wallet.Wallet -   9ad22d615fddc469c348145ef1139173ac6bd73c5173c93308a7552477a78701 prevtx <-unspent ->spent
+[NioClientManager] INFO org.bitcoinj.wallet.Wallet -   tx 5f85bf9598f16cfe155b1e186f3d51598f37900a63b84e3d144f10c77e2e31c2 ->unspent
+[NioClientManager] INFO org.bitcoinj.wallet.Wallet - Balance is now: 0.02000032 BTC
+[NioClientManager] INFO org.bitcoinj.wallet.WalletFiles - Saving wallet; last seen block is height 1670536, date 2020-03-20T10:26:24Z, hash 000000006e3db29af9fd7a1b862b428d00bda24e6956a689b2a6ce56abb062f1
+[NioClientManager] INFO org.bitcoinj.wallet.WalletFiles - Save completed in 4.721 ms
+[NioClientManager] INFO org.bitcoinj.wallet.Wallet - Received tx for -0.00000244 BTC: f612d6cba37eaa5328d91b681227a6a10d95802022b85518f43cf161662a989a [0] in block 0000000027190846335de872eef705a15d2040c3116ae6712590dc92a7ae5679
+[NioClientManager] INFO org.bitcoinj.wallet.Wallet -   marked 098ffa98eaf459583f327a9500b5809fcf62c2fea63439456dae2723a2a21c5a:0 as spent by f612d6cba37eaa5328d91b681227a6a10d95802022b85518f43cf161662a989a
+[NioClientManager] INFO org.bitcoinj.wallet.Wallet -   098ffa98eaf459583f327a9500b5809fcf62c2fea63439456dae2723a2a21c5a prevtx <-unspent ->spent
+[NioClientManager] INFO org.bitcoinj.wallet.Wallet -   tx f612d6cba37eaa5328d91b681227a6a10d95802022b85518f43cf161662a989a ->unspent
+[NioClientManager] INFO org.bitcoinj.wallet.Wallet - Balance is now: 0.01999788 BTC
+[NioClientManager] INFO org.bitcoinj.wallet.WalletFiles - Saving wallet; last seen block is height 1670537, date 2020-03-20T10:47:10Z, hash 0000000027190846335de872eef705a15d2040c3116ae6712590dc92a7ae5679
+[NioClientManager] INFO org.bitcoinj.wallet.WalletFiles - Save completed in 4.558 ms
+[NioClientManager] INFO org.bitcoinj.wallet.Wallet - Received tx for -0.00000236 BTC: ac6672f8b566b14302671909094048fdb3e6e7f0adf37d98be7b865bf1f073a5 [0] in block 000000005e8d3e38cae3fe268917350a20edccd6f2ee2baafe26d1f0a49ac99a
+[NioClientManager] INFO org.bitcoinj.wallet.Wallet -   marked aaccd62782e544b42fa57477ea02afa52882c99ba34c539fd5a6701ef3e2e73e:1 as spent by ac6672f8b566b14302671909094048fdb3e6e7f0adf37d98be7b865bf1f073a5
+[NioClientManager] INFO org.bitcoinj.wallet.Wallet -   aaccd62782e544b42fa57477ea02afa52882c99ba34c539fd5a6701ef3e2e73e prevtx <-unspent ->spent
+[NioClientManager] INFO org.bitcoinj.wallet.Wallet -   tx ac6672f8b566b14302671909094048fdb3e6e7f0adf37d98be7b865bf1f073a5 ->unspent
+[NioClientManager] INFO org.bitcoinj.wallet.Wallet - Balance is now: 0.01999552 BTC
+[NioClientManager] INFO org.bitcoinj.wallet.WalletFiles - Saving wallet; last seen block is height 1670545, date 2020-03-20T12:41:42Z, hash 000000005e8d3e38cae3fe268917350a20edccd6f2ee2baafe26d1f0a49ac99a
+[NioClientManager] INFO org.bitcoinj.wallet.WalletFiles - Save completed in 5.116 ms
+[NioClientManager] INFO org.bitcoinj.wallet.Wallet - Received tx for -0.00000236 BTC: 4cdc5dc59d866c6e0d5af20cafc0d7672116f68d14daf3786e01e6272a90e6bc [0] in block 00000000000000c620ac75fe7351f4b146eb0ac319646e172eb847a7d0d3a42b
+[NioClientManager] INFO org.bitcoinj.wallet.Wallet -   marked 5f85bf9598f16cfe155b1e186f3d51598f37900a63b84e3d144f10c77e2e31c2:0 as spent by 4cdc5dc59d866c6e0d5af20cafc0d7672116f68d14daf3786e01e6272a90e6bc
+[NioClientManager] INFO org.bitcoinj.wallet.Wallet -   5f85bf9598f16cfe155b1e186f3d51598f37900a63b84e3d144f10c77e2e31c2 prevtx <-unspent ->spent
+[NioClientManager] INFO org.bitcoinj.wallet.Wallet -   tx 4cdc5dc59d866c6e0d5af20cafc0d7672116f68d14daf3786e01e6272a90e6bc ->unspent
+[NioClientManager] INFO org.bitcoinj.wallet.Wallet - Balance is now: 0.01999316 BTC
+[NioClientManager] INFO org.bitcoinj.wallet.WalletFiles - Saving wallet; last seen block is height 1670562, date 2020-03-20T14:57:47Z, hash 00000000000000c620ac75fe7351f4b146eb0ac319646e172eb847a7d0d3a42b
+[NioClientManager] INFO org.bitcoinj.wallet.WalletFiles - Save completed in 4.614 ms
+[NioClientManager] INFO org.bitcoinj.wallet.Wallet - Received tx for -0.00000236 BTC: fc25b0fd3a6dff15e580d70b0cd2e69700794e805b4474c3af566a860e8e60ab [0] in block 00000000000000082d7cd2dbe95e43253b6d585462c51902855ca92267cd4ebb
+[NioClientManager] INFO org.bitcoinj.wallet.Wallet -   marked ac6672f8b566b14302671909094048fdb3e6e7f0adf37d98be7b865bf1f073a5:1 as spent by fc25b0fd3a6dff15e580d70b0cd2e69700794e805b4474c3af566a860e8e60ab
+[NioClientManager] INFO org.bitcoinj.wallet.Wallet -   ac6672f8b566b14302671909094048fdb3e6e7f0adf37d98be7b865bf1f073a5 prevtx <-unspent ->spent
+[NioClientManager] INFO org.bitcoinj.wallet.Wallet -   tx fc25b0fd3a6dff15e580d70b0cd2e69700794e805b4474c3af566a860e8e60ab ->unspent
+[NioClientManager] INFO org.bitcoinj.wallet.Wallet - Balance is now: 0.0199908 BTC
+[NioClientManager] INFO org.bitcoinj.wallet.WalletFiles - Saving wallet; last seen block is height 1670566, date 2020-03-20T15:35:08Z, hash 00000000000000082d7cd2dbe95e43253b6d585462c51902855ca92267cd4ebb
+[NioClientManager] INFO org.bitcoinj.wallet.WalletFiles - Save completed in 4.239 ms
+[NioClientManager] INFO org.bitcoinj.wallet.Wallet - Received tx for -0.00000236 BTC: d230210208dbb7a6014015b25d9b96a84c6a8f5d13fc024baaa74b6bbf956ba1 [0] in block 000000000000006248af064dc20db19026f94ab93f2c5868dadf0e06e2dcd7de
+[NioClientManager] INFO org.bitcoinj.wallet.Wallet -   marked 4cdc5dc59d866c6e0d5af20cafc0d7672116f68d14daf3786e01e6272a90e6bc:0 as spent by d230210208dbb7a6014015b25d9b96a84c6a8f5d13fc024baaa74b6bbf956ba1
+[NioClientManager] INFO org.bitcoinj.wallet.Wallet -   4cdc5dc59d866c6e0d5af20cafc0d7672116f68d14daf3786e01e6272a90e6bc prevtx <-unspent ->spent
+[NioClientManager] INFO org.bitcoinj.wallet.Wallet -   tx d230210208dbb7a6014015b25d9b96a84c6a8f5d13fc024baaa74b6bbf956ba1 ->unspent
+[NioClientManager] INFO org.bitcoinj.wallet.Wallet - Balance is now: 0.01998844 BTC
+[NioClientManager] INFO org.bitcoinj.wallet.WalletFiles - Saving wallet; last seen block is height 1670575, date 2020-03-20T17:05:54Z, hash 000000000000006248af064dc20db19026f94ab93f2c5868dadf0e06e2dcd7de
+[NioClientManager] INFO org.bitcoinj.wallet.WalletFiles - Save completed in 4.442 ms
+[NioClientManager] INFO org.bitcoinj.wallet.Wallet - Received tx for -0.00000236 BTC: 5c6ab0d49d3c1ca872fa4d7d0a6e68ccf878c27f09776a22ac083035a6fefc75 [0] in block 000000000000006899bf1099fd15e10e4f72f9eae7d2c32733576335cadcf69a
+[NioClientManager] INFO org.bitcoinj.wallet.Wallet -   marked fc25b0fd3a6dff15e580d70b0cd2e69700794e805b4474c3af566a860e8e60ab:1 as spent by 5c6ab0d49d3c1ca872fa4d7d0a6e68ccf878c27f09776a22ac083035a6fefc75
+[NioClientManager] INFO org.bitcoinj.wallet.Wallet -   fc25b0fd3a6dff15e580d70b0cd2e69700794e805b4474c3af566a860e8e60ab prevtx <-unspent ->spent
+[NioClientManager] INFO org.bitcoinj.wallet.Wallet -   tx 5c6ab0d49d3c1ca872fa4d7d0a6e68ccf878c27f09776a22ac083035a6fefc75 ->unspent
+[NioClientManager] INFO org.bitcoinj.wallet.Wallet - Balance is now: 0.01998608 BTC
+[NioClientManager] INFO org.bitcoinj.wallet.WalletFiles - Saving wallet; last seen block is height 1670611, date 2020-03-20T22:22:53Z, hash 000000000000006899bf1099fd15e10e4f72f9eae7d2c32733576335cadcf69a
+[NioClientManager] INFO org.bitcoinj.wallet.WalletFiles - Save completed in 4.901 ms
+[NioClientManager] INFO org.bitcoinj.wallet.Wallet - Received tx for -0.00000236 BTC: 2677297f6dc465881f63136fe755e6641f184fc1ab5a0fc03e135cb0de2a0607 [0] in block 000000000000012a81d7c17eee40f5f766df8732e025519d79e765d3ef554eb5
+[NioClientManager] INFO org.bitcoinj.wallet.Wallet -   marked d230210208dbb7a6014015b25d9b96a84c6a8f5d13fc024baaa74b6bbf956ba1:0 as spent by 2677297f6dc465881f63136fe755e6641f184fc1ab5a0fc03e135cb0de2a0607
+[NioClientManager] INFO org.bitcoinj.wallet.Wallet -   d230210208dbb7a6014015b25d9b96a84c6a8f5d13fc024baaa74b6bbf956ba1 prevtx <-unspent ->spent
+[NioClientManager] INFO org.bitcoinj.wallet.Wallet -   tx 2677297f6dc465881f63136fe755e6641f184fc1ab5a0fc03e135cb0de2a0607 ->unspent
+[NioClientManager] INFO org.bitcoinj.wallet.Wallet - Balance is now: 0.01998372 BTC
+[NioClientManager] INFO org.bitcoinj.wallet.WalletFiles - Saving wallet; last seen block is height 1670694, date 2020-03-21T11:18:13Z, hash 000000000000012a81d7c17eee40f5f766df8732e025519d79e765d3ef554eb5
+[NioClientManager] INFO org.bitcoinj.wallet.WalletFiles - Save completed in 4.955 ms
+[NioClientManager] INFO org.bitcoinj.core.AbstractBlockChain - Connected orphan 000000000000007dc67c6b10c9f2f25c56ac66f314fb48257ae172b19119bf02
+[NioClientManager] INFO org.bitcoinj.core.AbstractBlockChain - Connected 1 orphan blocks.
+[NioClientManager] INFO org.bitcoinj.core.listeners.DownloadProgressTracker - Chain download 100% done with 0 blocks to go, block date 2020-03-21T11:42:59Z
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup$ChainDownloadSpeedCalculator - End of sync detected.
+[Wallet autosave thread] INFO org.bitcoinj.wallet.WalletFiles - Background saving wallet; last seen block is height 1670698, date 2020-03-21T11:43:31Z, hash 000000000000007dc67c6b10c9f2f25c56ac66f314fb48257ae172b19119bf02
+[Wallet autosave thread] INFO org.bitcoinj.wallet.WalletFiles - Save completed in 14.53 ms
+[AWT-EventQueue-0] ERROR org.bitcoinj.core.Context - Performing thread fixup: you are accessing bitcoinj via a thread that has not had any context set on it.
+[AWT-EventQueue-0] ERROR org.bitcoinj.core.Context - This error has been corrected for, but doing this makes your app less robust.
+[AWT-EventQueue-0] ERROR org.bitcoinj.core.Context - You should use Context.propagate() or a ContextPropagatingThreadFactory.
+[AWT-EventQueue-0] ERROR org.bitcoinj.core.Context - Please refer to the user guide for more information about this.
+[AWT-EventQueue-0] ERROR org.bitcoinj.core.Context - Thread name is AWT-EventQueue-0.
+[AWT-EventQueue-0] INFO org.bitcoinj.wallet.Wallet - Completing send tx with 1 outputs totalling 0.00 BTC and a fee of 0.00001 BTC/kB
+[AWT-EventQueue-0] INFO org.bitcoinj.wallet.Wallet -   with 0.00997632 BTC change
+[AWT-EventQueue-0] INFO org.bitcoinj.wallet.Wallet -   completed: Transaction{406952a7ec2da89814ab1b635b6bad3e5fc46affdfd7c4deaa301973e7939aa0
+purpose: USER_PAYMENT
+   in   PUSHDATA(72)[3045022100de56ddc2fae1d0008b48aa9f16fe6c2c6d69a811e2d79a7092a5334809c9dfd8022025b14d0f08dad42338b56d4889723aafc8f0d6cb4ba99b797ff8b6fd4aac26c501] PUSHDATA(33)[03f01d59e506864628c585998b8e5bc5c2c0e10578c20b4ac3108bdec1dadbff0d]  0.00997868 BTC
+        P2PKH addr:mqRKZf81rhPcFdL4zoEkfEpiSPrcPgcUsv  outpoint:5c6ab0d49d3c1ca872fa4d7d0a6e68ccf878c27f09776a22ac083035a6fefc75:0
+   out  RETURN PUSHDATA(32)[3e383e47ec7a5434c918eceef3c1443931d5ed85061629378d3299710e649941]  0.00 BTC
+        unknown script type   out  DUP HASH160 PUSHDATA(20)[b51384ffbbc74b96bd24326c6a7065c7d651c446] EQUALVERIFY CHECKSIG  0.00997632 BTC
+        P2PKH addr:mx2Pz1saccRaMVSrvb1ypfQsfwibSkAZZ6
+   fee  0.00001004 BTC/kB, 0.00000236 BTC for 235 bytes
+}
+[AWT-EventQueue-0] INFO org.bitcoinj.wallet.Wallet - commitTx of 406952a7ec2da89814ab1b635b6bad3e5fc46affdfd7c4deaa301973e7939aa0
+[AWT-EventQueue-0] INFO org.bitcoinj.wallet.Wallet -   marked 5c6ab0d49d3c1ca872fa4d7d0a6e68ccf878c27f09776a22ac083035a6fefc75:0 as spent by 406952a7ec2da89814ab1b635b6bad3e5fc46affdfd7c4deaa301973e7939aa0
+[AWT-EventQueue-0] INFO org.bitcoinj.wallet.Wallet -   5c6ab0d49d3c1ca872fa4d7d0a6e68ccf878c27f09776a22ac083035a6fefc75 prevtx <-unspent ->spent
+[AWT-EventQueue-0] INFO org.bitcoinj.wallet.Wallet - ->pending: 406952a7ec2da89814ab1b635b6bad3e5fc46affdfd7c4deaa301973e7939aa0
+[AWT-EventQueue-0] INFO org.bitcoinj.wallet.Wallet - Estimated balance is now: 0.01998136 BTC
+[AWT-EventQueue-0] INFO org.bitcoinj.wallet.KeyChainGroup - Marking key as used: DeterministicKey{pub=02bb2dca1ab0a108eceaa93adb3ede5157135ac4e95e32297ab893a96d7886eadf, chainCode=9386789a5ce2ddfc451690fa3cc5fca6d39fc13a49d691d031f79e3af3f903a8, path=M/0H/1/17, isEncrypted=false, isPubKeyOnly=false}
+[AWT-EventQueue-0] INFO org.bitcoinj.wallet.WalletFiles - Saving wallet; last seen block is height 1670698, date 2020-03-21T11:43:31Z, hash 000000000000007dc67c6b10c9f2f25c56ac66f314fb48257ae172b19119bf02
+[AWT-EventQueue-0] INFO org.bitcoinj.wallet.WalletFiles - Save completed in 5.185 ms
+[AWT-EventQueue-0] INFO org.bitcoinj.core.TransactionBroadcast - Waiting for 10 peers required for broadcast, we have 13 ...
+[AWT-EventQueue-0] INFO org.bitcoinj.core.TransactionBroadcast - broadcastTransaction: We have 13 peers, adding 406952a7ec2da89814ab1b635b6bad3e5fc46affdfd7c4deaa301973e7939aa0 to the memory pool
+[AWT-EventQueue-0] INFO org.bitcoinj.core.TransactionBroadcast - Sending to 7 peers, will wait for 3, sending to: Peer{[3.114.7.254]:18333, version=70015, subVer=/Satoshi:0.19.1/, services=1033 (NETWORK, WITNESS, NETWORK_LIMITED), time=2020-03-21 12:52:05, height=1670698},Peer{[34.250.169.52]:18333, version=70015, subVer=/Satoshi:0.16.3/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2020-03-21 12:51:49, height=1670698},Peer{[45.115.178.92]:18333, version=70015, subVer=/Satoshi:0.17.1/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2020-03-21 12:51:48, height=1670698},Peer{[77.247.178.250]:18333, version=70015, subVer=/Satoshi:0.16.0/, services=1036 (BLOOM, WITNESS, NETWORK_LIMITED), time=2020-03-21 12:51:52, height=1414448},Peer{[195.154.163.75]:18333, version=70015, subVer=/Satoshi:0.16.3/, services=1033 (NETWORK, WITNESS, NETWORK_LIMITED), time=2020-03-21 12:51:51, height=1670698},Peer{[50.2.13.165]:18333, version=70015, subVer=/Satoshi:0.19.1/, services=1033 (NETWORK, WITNESS, NETWORK_LIMITED), time=2020-03-21 12:51:51, height=1670698},Peer{[165.22.52.101]:18333, version=70015, subVer=/Satoshi:0.19.1/, services=1033 (NETWORK, WITNESS, NETWORK_LIMITED), time=2020-03-21 12:51:52, height=1670698}
+[NioClientManager] INFO org.bitcoinj.core.Peer - [77.247.178.250]:18333: Received getdata message: GetDataMessage{[TRANSACTION: 5c6ab0d49d3c1ca872fa4d7d0a6e68ccf878c27f09776a22ac083035a6fefc75]}
+[NioClientManager] INFO org.bitcoinj.core.Peer - [77.247.178.250]:18333: Sending 1 items gathered from listeners to peer
+[NioClientManager] INFO org.bitcoinj.core.Peer - [77.247.178.250]:18333: Received getdata message: GetDataMessage{[TRANSACTION: fc25b0fd3a6dff15e580d70b0cd2e69700794e805b4474c3af566a860e8e60ab]}
+[NioClientManager] INFO org.bitcoinj.core.Peer - [77.247.178.250]:18333: Sending 1 items gathered from listeners to peer
+[NioClientManager] INFO org.bitcoinj.core.Peer - [77.247.178.250]:18333: Received getdata message: GetDataMessage{[TRANSACTION: ac6672f8b566b14302671909094048fdb3e6e7f0adf37d98be7b865bf1f073a5]}
+[NioClientManager] INFO org.bitcoinj.core.Peer - [77.247.178.250]:18333: Sending 1 items gathered from listeners to peer
+[NioClientManager] INFO org.bitcoinj.core.Peer - [77.247.178.250]:18333: Received getdata message: GetDataMessage{[TRANSACTION: aaccd62782e544b42fa57477ea02afa52882c99ba34c539fd5a6701ef3e2e73e]}
+[NioClientManager] INFO org.bitcoinj.core.Peer - [77.247.178.250]:18333: Sending 1 items gathered from listeners to peer
+[NioClientManager] INFO org.bitcoinj.core.Peer - [77.247.178.250]:18333: Received getdata message: GetDataMessage{[TRANSACTION: 5835128ff2b11ab1e3158e47a8361238c1a5b64e176559ff70f060387ae516f8]}
+[NioClientManager] INFO org.bitcoinj.core.Peer - [77.247.178.250]:18333: Sending 1 items gathered from listeners to peer
+[NioClientManager] INFO org.bitcoinj.core.Peer - [77.247.178.250]:18333: Received getdata message: GetDataMessage{[TRANSACTION: 8628b1bfb84c2802c380a9d3bfcc744bd88f4ee945605c4dd6ca0ae742286346]}
+[NioClientManager] INFO org.bitcoinj.core.Peer - [77.247.178.250]:18333: Sending 1 items gathered from listeners to peer
+[NioClientManager] ERROR org.bitcoinj.core.Peer - Peer{[77.247.178.250]:18333, version=70015, subVer=/Satoshi:0.16.0/, services=1036 (BLOOM, WITNESS, NETWORK_LIMITED), time=2020-03-21 12:51:52, height=1414448} /Satoshi:0.16.0/: Received Reject: tx 8628b1bfb84c2802c380a9d3bfcc744bd88f4ee945605c4dd6ca0ae742286346 for reason 'non-final' (64)
+[NioClientManager] INFO org.bitcoinj.core.PeerGroup - [3.114.7.254]:18333: Peer died      (12 connected, 0 pending, 12 max)
+[bitcoinj user thread] INFO org.bitcoinj.core.TransactionBroadcast - broadcastTransaction: SEEN_PEERS:  TX 406952a7ec2da89814ab1b635b6bad3e5fc46affdfd7c4deaa301973e7939aa0 seen by 1 peers
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Stopping ...
+[WalletAppKit STOPPING] INFO org.bitcoinj.core.PeerGroup - Awaiting PeerGroup shutdown ...
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Unsetting download peer: Peer{[34.250.169.52]:18333, version=70015, subVer=/Satoshi:0.16.3/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2020-03-21 12:51:49, height=1670698}
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Stopped, took 30.02 ms.
+[WalletAppKit STOPPING] INFO org.bitcoinj.core.PeerGroup - ... took 61.97 ms
