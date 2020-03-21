@@ -1,0 +1,22 @@
+Das Programm arbeitet im Netzwerk: org.bitcoin.test
+Guten Tag, zum Start bitte den Button 'waehlen Sie die Datei um den Zeitstempel zu verifizieren' druecken
+Datei dessen Timestamp ueberprueft werden soll: C:\Users\admi\Documents\java-crypto_bplaced_net.pdf
+
+Informationen im OP_RETURN-Bereich der Transaktion werden verifiziert:
+Die erweiterte Timestampdatei C:\Users\admi\Documents\java-crypto_bplaced_net.pdf.timestamp_extended.txt ist vorhanden: true
+TxId in der Datei: 406952A7EC2DA89814AB1B635B6BAD3E5FC46AFFDFD7C4DEAA301973E7939AA0
+btn chooseFile Thread Running
+Warten auf die Antwort eines Nodes mit dem gesuchten Block: 0000000000000004e14452831e1c3a3bc58e906e70f44e8f2969b4fbd85c2071
+Der Node hat kein Ergebnis innerhalb von 20 Sekunden abgeliefert, die Suche endet jetzt
+Datei dessen Timestamp ueberprueft werden soll: C:\Users\admi\Documents\java-crypto_bplaced_net.pdf
+
+Informationen im OP_RETURN-Bereich der Transaktion werden verifiziert:
+Die erweiterte Timestampdatei C:\Users\admi\Documents\java-crypto_bplaced_net.pdf.timestamp_extended.txt ist vorhanden: true
+TxId in der Datei: 406952A7EC2DA89814AB1B635B6BAD3E5FC46AFFDFD7C4DEAA301973E7939AA0
+btn chooseFile Thread Running
+Warten auf die Antwort eines Nodes mit dem gesuchten Block: 0000000000000004e14452831e1c3a3bc58e906e70f44e8f2969b4fbd85c2071
+Gesuchte Transaktion: 406952A7EC2DA89814AB1B635B6BAD3E5FC46AFFDFD7C4DEAA301973E7939AA0
+Gesuchter Hash      : 3e383e47ec7a5434c918eceef3c1443931d5ed85061629378d3299710e649941
+Timestamp BESTAETIGT - der Hash wurde in der Transaktion gefunden
+Date & Time at Start: 2020-03-21T18:58:02.631296100
+Date & Time at End:   2020-03-21T19:00:48.258330900
