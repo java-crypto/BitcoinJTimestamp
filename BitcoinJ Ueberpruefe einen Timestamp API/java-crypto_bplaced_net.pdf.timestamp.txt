@@ -1,0 +1,20 @@
+0f85e90d9526ff183d4b9d6e9595a9ecedbcdd414034a0b4ec5001eb594142db
+3e383e47ec7a5434c918eceef3c1443931d5ed85061629378d3299710e649941
+C:\Users\admi\Documents\java-crypto_bplaced_net.pdf
+61455
+22.03.2020 11:48:11
+**********************************************************************************
+******* do not edit above lines | bitte die oberen Zeilen nicht veraendern *******
+**********************************************************************************
+This Timestamp was created with / Dieser Zeitstempel wurde generiert mit
+http://java-crypto.bplaced.net/bitcoinj-erzeuge-einen-timestamp/
+Sourcecode      : https://github.com/java-crypto/BitcoinJTimestamp
+Dateiname       : C:\Users\admi\Documents\java-crypto_bplaced_net.pdf
+Dateigroesse    : 61455 (Bytes)
+Dateidatum/Zeit : 21.03.2020 12:07:09.981 (zuletzt modifiziert)
+Timestamp-Datei : C:\Users\admi\Documents\java-crypto_bplaced_net.pdf.timestamp.txt
+Hashwert SHA256 : 3e383e47ec7a5434c918eceef3c1443931d5ed85061629378d3299710e649941
+Datum Timestamp : 22.03.2020 11:48:11
+TransaktionsId  : 0f85e90d9526ff183d4b9d6e9595a9ecedbcdd414034a0b4ec5001eb594142db
+Network-ID      : org.bitcoin.test
+**********************************************************************************

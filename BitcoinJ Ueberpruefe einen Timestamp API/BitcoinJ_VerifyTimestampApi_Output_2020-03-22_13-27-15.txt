@@ -1,0 +1,10 @@
+Das Programm arbeitet im Netzwerk: org.bitcoin.test
+Guten Tag, zum Start bitte den Button 'waehlen Sie die Datei um den Zeitstempel zu verifizieren' druecken
+Datei dessen Timestamp ueberprueft werden soll: C:\Users\admi\Documents\java-crypto_bplaced_net.pdf
+
+Informationen im OP_RETURN-Bereich der Transaktion werden verifiziert:
+Die Timestampdatei C:\Users\admi\Documents\java-crypto_bplaced_net.pdf.timestamp.txt ist vorhanden: true
+TxId in der Datei: 0f85e90d9526ff183d4b9d6e9595a9ecedbcdd414034a0b4ec5001eb594142db
+Der OP_Return stimmt ueberein, die Datei ist identisch
+Date & Time at Start: 2020-03-22T13:27:15.770909900
+Date & Time at End:   2020-03-22T13:28:11.362102400
