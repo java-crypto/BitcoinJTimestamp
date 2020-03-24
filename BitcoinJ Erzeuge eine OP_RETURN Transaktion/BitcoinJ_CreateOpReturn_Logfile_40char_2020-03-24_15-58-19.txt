@@ -1,0 +1,665 @@
+[Thread-0] INFO org.bitcoinj.core.Context - Creating bitcoinj 0.15.6 context.
+[WalletAppKit STARTING] INFO org.bitcoinj.kits.WalletAppKit - Starting up with directory = .
+[WalletAppKit STARTING] INFO org.bitcoinj.core.AbstractBlockChain - chain head is at height 1670950:
+ block: 
+   hash: 00000000c8f91fb6bc037899858aca9c5df4c5e120c383c294d509171492c151
+   version: 536870912 (BIP34, BIP66, BIP65)
+   previous block: 00000000f8cbc3644d44d323ea223f2e5c8d3119868853aa7aa1129b35f2c722
+   time: 1585061741 (2020-03-24T14:55:41Z)
+   difficulty target (nBits): 486604799
+   nonce: 1467970461
+
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Starting ...
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Localhost peer not detected.
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Peer discovery took 33.91 ms and returned 114 items
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Waiting 2078 ms before next connect attempt to [2607:5300:60:8702:0:0:0:0]:18333
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Attempting connection to [2604:a880:2:d0:0:0:65:c001]:18333     (0 connected, 1 pending, 12 max)
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Attempting connection to [2607:5300:60:8702:0:0:0:0]:18333     (0 connected, 2 pending, 12 max)
+[NioClientManager] WARN org.bitcoinj.net.NioClientManager - Failed to connect with exception: java.net.SocketException: Network is unreachable: no further information
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Attempting connection to [178.128.244.253]:18333     (0 connected, 3 pending, 12 max)
+java.net.SocketException: Network is unreachable: no further information
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
+	at org.bitcoinj.net.NioClientManager.handleKey(NioClientManager.java:64)
+	at org.bitcoinj.net.NioClientManager.run(NioClientManager.java:122)
+	at com.google.common.util.concurrent.AbstractExecutionThreadService$1$2.run(AbstractExecutionThreadService.java:66)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:119)
+	at org.bitcoinj.utils.ContextPropagatingThreadFactory$1.run(ContextPropagatingThreadFactory.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Attempting connection to [2001:41d0:403:422:0:0:0:0]:18333     (0 connected, 4 pending, 12 max)
+[NioClientManager] INFO org.bitcoinj.core.PeerGroup - [2604:a880:2:d0:0:0:65:c001]:18333: Peer died      (0 connected, 3 pending, 12 max)
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Waiting 1500 ms before next connect attempt to [2001:41d0:8:c519:0:0:0:1]:18333
+[NioClientManager] WARN org.bitcoinj.net.NioClientManager - Failed to connect with exception: java.net.SocketException: Network is unreachable: no further information
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Waiting 1485 ms before next connect attempt to [5.188.62.33]:18333
+java.net.SocketException: Network is unreachable: no further information
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
+	at org.bitcoinj.net.NioClientManager.handleKey(NioClientManager.java:64)
+	at org.bitcoinj.net.NioClientManager.run(NioClientManager.java:122)
+	at com.google.common.util.concurrent.AbstractExecutionThreadService$1$2.run(AbstractExecutionThreadService.java:66)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:119)
+	at org.bitcoinj.utils.ContextPropagatingThreadFactory$1.run(ContextPropagatingThreadFactory.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+[NioClientManager] INFO org.bitcoinj.core.PeerGroup - [2001:41d0:403:422:0:0:0:0]:18333: Peer died      (0 connected, 2 pending, 12 max)
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Waiting 2250 ms before next connect attempt to [2001:41d0:8:c519:0:0:0:1]:18333
+[NioClientManager] WARN org.bitcoinj.net.NioClientManager - Failed to connect with exception: java.net.SocketException: Network is unreachable: no further information
+java.net.SocketException: Network is unreachable: no further information
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
+	at org.bitcoinj.net.NioClientManager.handleKey(NioClientManager.java:64)
+	at org.bitcoinj.net.NioClientManager.run(NioClientManager.java:122)
+	at com.google.common.util.concurrent.AbstractExecutionThreadService$1$2.run(AbstractExecutionThreadService.java:66)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:119)
+	at org.bitcoinj.utils.ContextPropagatingThreadFactory$1.run(ContextPropagatingThreadFactory.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+[NioClientManager] INFO org.bitcoinj.core.PeerGroup - [2607:5300:60:8702:0:0:0:0]:18333: Peer died      (0 connected, 1 pending, 12 max)
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Waiting 3375 ms before next connect attempt to [2600:3c00:0:0:f03c:91ff:fe9e:7f03]:18333
+[NioClientManager] INFO org.bitcoinj.net.NioClientManager - Connected to seed.testnet.bitcoin.sprovoost.nl/178.128.244.253:18333
+[NioClientManager] INFO org.bitcoinj.core.Peer - Announcing to seed.testnet.bitcoin.sprovoost.nl/178.128.244.253:18333 as: /bitcoinj:0.15.6/
+[NioClientManager] INFO org.bitcoinj.core.Peer - Peer{[178.128.244.253]:18333, version=70012, subVer=/Satoshi:0.12.1(bitcore)/, services=5 (NETWORK, BLOOM), time=2020-03-24 15:58:35, height=1670950}
+[NioClientManager] INFO org.bitcoinj.core.PeerGroup - Peer{[178.128.244.253]:18333, version=70012, subVer=/Satoshi:0.12.1(bitcore)/, services=5 (NETWORK, BLOOM), time=2020-03-24 15:58:35, height=1670950}: New peer      (1 connected, 0 pending, 12 max)
+[NioClientManager] INFO org.bitcoinj.core.Peer - Peer{[178.128.244.253]:18333, version=70012, subVer=/Satoshi:0.12.1(bitcore)/, services=5 (NETWORK, BLOOM), time=2020-03-24 15:58:35, height=1670950}: Sending Bloom filter and querying mempool
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Attempting connection to [2620:6e:a000:1:43:43:43:43]:18333     (1 connected, 1 pending, 12 max)
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Attempting connection to [2600:3c00:0:0:f03c:91ff:fe9e:7f03]:18333     (1 connected, 2 pending, 12 max)
+[NioClientManager] WARN org.bitcoinj.net.NioClientManager - Failed to connect with exception: java.net.SocketException: Network is unreachable: no further information
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Attempting connection to [2001:41d0:8:c519:0:0:0:1]:18333     (1 connected, 3 pending, 12 max)
+java.net.SocketException: Network is unreachable: no further information
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
+	at org.bitcoinj.net.NioClientManager.handleKey(NioClientManager.java:64)
+	at org.bitcoinj.net.NioClientManager.run(NioClientManager.java:122)
+	at com.google.common.util.concurrent.AbstractExecutionThreadService$1$2.run(AbstractExecutionThreadService.java:66)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:119)
+	at org.bitcoinj.utils.ContextPropagatingThreadFactory$1.run(ContextPropagatingThreadFactory.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Attempting connection to [5.188.62.33]:18333     (1 connected, 4 pending, 12 max)
+[NioClientManager] INFO org.bitcoinj.core.PeerGroup - [2620:6e:a000:1:43:43:43:43]:18333: Peer died      (1 connected, 3 pending, 12 max)
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Waiting 1016 ms before next connect attempt to [99.159.25.149]:18333
+[NioClientManager] WARN org.bitcoinj.net.NioClientManager - Failed to connect with exception: java.net.SocketException: Network is unreachable: no further information
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Waiting 1000 ms before next connect attempt to [178.128.59.107]:18333
+java.net.SocketException: Network is unreachable: no further information
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
+	at org.bitcoinj.net.NioClientManager.handleKey(NioClientManager.java:64)
+	at org.bitcoinj.net.NioClientManager.run(NioClientManager.java:122)
+	at com.google.common.util.concurrent.AbstractExecutionThreadService$1$2.run(AbstractExecutionThreadService.java:66)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:119)
+	at org.bitcoinj.utils.ContextPropagatingThreadFactory$1.run(ContextPropagatingThreadFactory.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Waiting 985 ms before next connect attempt to [99.159.25.149]:18333
+[NioClientManager] INFO org.bitcoinj.core.PeerGroup - [2600:3c00:0:0:f03c:91ff:fe9e:7f03]:18333: Peer died      (1 connected, 2 pending, 12 max)
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Waiting 1500 ms before next connect attempt to [178.128.59.107]:18333
+[NioClientManager] WARN org.bitcoinj.net.NioClientManager - Failed to connect with exception: java.net.SocketException: Network is unreachable: no further information
+java.net.SocketException: Network is unreachable: no further information
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
+	at org.bitcoinj.net.NioClientManager.handleKey(NioClientManager.java:64)
+	at org.bitcoinj.net.NioClientManager.run(NioClientManager.java:122)
+	at com.google.common.util.concurrent.AbstractExecutionThreadService$1$2.run(AbstractExecutionThreadService.java:66)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:119)
+	at org.bitcoinj.utils.ContextPropagatingThreadFactory$1.run(ContextPropagatingThreadFactory.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+[NioClientManager] INFO org.bitcoinj.core.PeerGroup - [2001:41d0:8:c519:0:0:0:1]:18333: Peer died      (1 connected, 1 pending, 12 max)
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Waiting 2250 ms before next connect attempt to [2001:0:9d38:90d7:433:113d:355b:3ed4]:18333
+[NioClientManager] INFO org.bitcoinj.net.NioClientManager - Connected to seed.tbtc.petertodd.org/5.188.62.33:18333
+[NioClientManager] INFO org.bitcoinj.core.Peer - Announcing to seed.tbtc.petertodd.org/5.188.62.33:18333 as: /bitcoinj:0.15.6/
+[NioClientManager] INFO org.bitcoinj.core.Peer - Peer{[5.188.62.33]:18333, version=70015, subVer=/Satoshi:0.18.1/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2020-03-24 15:58:41, height=1670950}
+[NioClientManager] INFO org.bitcoinj.core.PeerGroup - Peer{[5.188.62.33]:18333, version=70015, subVer=/Satoshi:0.18.1/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2020-03-24 15:58:41, height=1670950}: New peer      (2 connected, 0 pending, 12 max)
+[NioClientManager] INFO org.bitcoinj.core.Peer - Peer{[5.188.62.33]:18333, version=70015, subVer=/Satoshi:0.18.1/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2020-03-24 15:58:41, height=1670950}: Sending Bloom filter and querying mempool
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Attempting connection to [2001:985:55a0:1:0:0:0:2]:18333     (2 connected, 1 pending, 12 max)
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Attempting connection to [2001:0:9d38:90d7:433:113d:355b:3ed4]:18333     (2 connected, 2 pending, 12 max)
+[NioClientManager] WARN org.bitcoinj.net.NioClientManager - Failed to connect with exception: java.net.SocketException: Network is unreachable: no further information
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Attempting connection to [178.128.59.107]:18333     (2 connected, 3 pending, 12 max)
+java.net.SocketException: Network is unreachable: no further information
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
+	at org.bitcoinj.net.NioClientManager.handleKey(NioClientManager.java:64)
+	at org.bitcoinj.net.NioClientManager.run(NioClientManager.java:122)
+	at com.google.common.util.concurrent.AbstractExecutionThreadService$1$2.run(AbstractExecutionThreadService.java:66)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:119)
+	at org.bitcoinj.utils.ContextPropagatingThreadFactory$1.run(ContextPropagatingThreadFactory.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Attempting connection to [99.159.25.149]:18333     (2 connected, 4 pending, 12 max)
+[NioClientManager] INFO org.bitcoinj.core.PeerGroup - [2001:985:55a0:1:0:0:0:2]:18333: Peer died      (2 connected, 3 pending, 12 max)
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Waiting 1000 ms before next connect attempt to [5.9.5.135]:18333
+[NioClientManager] WARN org.bitcoinj.net.NioClientManager - Failed to connect with exception: java.net.SocketException: Network is unreachable: no further information
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Waiting 1000 ms before next connect attempt to [93.180.178.213]:18333
+java.net.SocketException: Network is unreachable: no further information
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
+	at org.bitcoinj.net.NioClientManager.handleKey(NioClientManager.java:64)
+	at org.bitcoinj.net.NioClientManager.run(NioClientManager.java:122)
+	at com.google.common.util.concurrent.AbstractExecutionThreadService$1$2.run(AbstractExecutionThreadService.java:66)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:119)
+	at org.bitcoinj.utils.ContextPropagatingThreadFactory$1.run(ContextPropagatingThreadFactory.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+[NioClientManager] INFO org.bitcoinj.core.PeerGroup - [2001:0:9d38:90d7:433:113d:355b:3ed4]:18333: Peer died      (2 connected, 2 pending, 12 max)
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Waiting 1500 ms before next connect attempt to [5.9.5.135]:18333
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Waiting 1328 ms before next connect attempt to [141.223.85.145]:18333
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Waiting 1328 ms before next connect attempt to [5.9.5.135]:18333
+[NioClientManager] INFO org.bitcoinj.net.NioClientManager - Connected to seed.tbtc.petertodd.org/178.128.59.107:18333
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Waiting 1328 ms before next connect attempt to [141.223.85.145]:18333
+[NioClientManager] INFO org.bitcoinj.core.Peer - Announcing to seed.tbtc.petertodd.org/178.128.59.107:18333 as: /bitcoinj:0.15.6/
+[NioClientManager] INFO org.bitcoinj.core.Peer - Peer{[178.128.59.107]:18333, version=70015, subVer=/Satoshi:0.16.2/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2020-03-24 15:58:39, height=1414448}
+[NioClientManager] INFO org.bitcoinj.core.PeerGroup - Peer{[178.128.59.107]:18333, version=70015, subVer=/Satoshi:0.16.2/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2020-03-24 15:58:39, height=1414448}: New peer      (3 connected, 1 pending, 12 max)
+[NioClientManager] INFO org.bitcoinj.core.Peer - Peer{[178.128.59.107]:18333, version=70015, subVer=/Satoshi:0.16.2/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2020-03-24 15:58:39, height=1414448}: Sending Bloom filter and querying mempool
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Attempting connection to [5.9.5.135]:18333     (3 connected, 2 pending, 12 max)
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Attempting connection to [141.223.85.145]:18333     (3 connected, 3 pending, 12 max)
+[NioClientManager] INFO org.bitcoinj.net.NioClientManager - Connected to testnet-seed.bitcoin.jonasschnelli.ch/5.9.5.135:18333
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Attempting connection to [93.180.178.213]:18333     (3 connected, 4 pending, 12 max)
+[NioClientManager] INFO org.bitcoinj.core.Peer - Announcing to testnet-seed.bitcoin.jonasschnelli.ch/5.9.5.135:18333 as: /bitcoinj:0.15.6/
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Attempting connection to [2a01:7c8:aaca:421:5054:ff:fef4:b292]:18333     (3 connected, 5 pending, 12 max)
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Attempting connection to [fd87:d87e:eb43:6a8b:d278:3f7a:f892:8f80]:18333     (3 connected, 6 pending, 12 max)
+[NioClientManager] WARN org.bitcoinj.net.NioClientManager - Failed to connect with exception: java.net.SocketException: Network is unreachable: no further information
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Attempting connection to [88.198.54.148]:18333     (3 connected, 7 pending, 12 max)
+java.net.SocketException: Network is unreachable: no further information
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
+	at org.bitcoinj.net.NioClientManager.handleKey(NioClientManager.java:64)
+	at org.bitcoinj.net.NioClientManager.run(NioClientManager.java:122)
+	at com.google.common.util.concurrent.AbstractExecutionThreadService$1$2.run(AbstractExecutionThreadService.java:66)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:119)
+	at org.bitcoinj.utils.ContextPropagatingThreadFactory$1.run(ContextPropagatingThreadFactory.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Attempting connection to [93.79.235.177]:18333     (3 connected, 8 pending, 12 max)
+[NioClientManager] INFO org.bitcoinj.core.PeerGroup - [2a01:7c8:aaca:421:5054:ff:fef4:b292]:18333: Peer died      (3 connected, 7 pending, 12 max)
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Waiting 1015 ms before next connect attempt to [69.59.18.23]:18333
+[NioClientManager] INFO org.bitcoinj.core.Peer - Peer{[5.9.5.135]:18333, version=70015, subVer=/Satoshi:0.17.0.1/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2020-03-24 15:58:39, height=1670950}
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Waiting 1000 ms before next connect attempt to [3.112.43.163]:18333
+[NioClientManager] INFO org.bitcoinj.core.PeerGroup - Peer{[5.9.5.135]:18333, version=70015, subVer=/Satoshi:0.17.0.1/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2020-03-24 15:58:39, height=1670950}: New peer      (4 connected, 6 pending, 12 max)
+[NioClientManager] INFO org.bitcoinj.core.Peer - Peer{[5.9.5.135]:18333, version=70015, subVer=/Satoshi:0.17.0.1/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2020-03-24 15:58:39, height=1670950}: Sending Bloom filter and querying mempool
+[NioClientManager] INFO org.bitcoinj.net.NioClientManager - Connected to seed.testnet.bitcoin.sprovoost.nl/88.198.54.148:18333
+[NioClientManager] INFO org.bitcoinj.core.Peer - Announcing to seed.testnet.bitcoin.sprovoost.nl/88.198.54.148:18333 as: /bitcoinj:0.15.6/
+[NioClientManager] WARN org.bitcoinj.net.NioClientManager - Failed to connect with exception: java.net.SocketException: Network is unreachable: no further information
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Attempting connection to [69.59.18.23]:18333     (4 connected, 7 pending, 12 max)
+java.net.SocketException: Network is unreachable: no further information
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
+	at org.bitcoinj.net.NioClientManager.handleKey(NioClientManager.java:64)
+	at org.bitcoinj.net.NioClientManager.run(NioClientManager.java:122)
+	at com.google.common.util.concurrent.AbstractExecutionThreadService$1$2.run(AbstractExecutionThreadService.java:66)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:119)
+	at org.bitcoinj.utils.ContextPropagatingThreadFactory$1.run(ContextPropagatingThreadFactory.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Attempting connection to [3.112.43.163]:18333     (4 connected, 8 pending, 12 max)
+[NioClientManager] INFO org.bitcoinj.core.PeerGroup - [fd87:d87e:eb43:6a8b:d278:3f7a:f892:8f80]:18333: Peer died      (4 connected, 7 pending, 12 max)
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Waiting 1016 ms before next connect attempt to [18.231.124.140]:18333
+[NioClientManager] INFO org.bitcoinj.net.NioClientManager - Connected to testnet-seed.bitcoin.jonasschnelli.ch/93.180.178.213:18333
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Waiting 1000 ms before next connect attempt to [69.197.185.106]:18333
+[NioClientManager] INFO org.bitcoinj.core.Peer - Announcing to testnet-seed.bitcoin.jonasschnelli.ch/93.180.178.213:18333 as: /bitcoinj:0.15.6/
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Waiting 985 ms before next connect attempt to [18.231.124.140]:18333
+[NioClientManager] INFO org.bitcoinj.net.NioClientManager - Connected to seed.tbtc.petertodd.org/141.223.85.145:18333
+[NioClientManager] INFO org.bitcoinj.core.Peer - Announcing to seed.tbtc.petertodd.org/141.223.85.145:18333 as: /bitcoinj:0.15.6/
+[NioClientManager] INFO org.bitcoinj.core.Peer - Peer{[88.198.54.148]:18333, version=70015, subVer=/Satoshi:0.18.99/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2020-03-24 15:58:39, height=1670950}
+[NioClientManager] INFO org.bitcoinj.core.PeerGroup - Peer{[88.198.54.148]:18333, version=70015, subVer=/Satoshi:0.18.99/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2020-03-24 15:58:39, height=1670950}: New peer      (5 connected, 6 pending, 12 max)
+[NioClientManager] INFO org.bitcoinj.core.Peer - Peer{[88.198.54.148]:18333, version=70015, subVer=/Satoshi:0.18.99/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2020-03-24 15:58:39, height=1670950}: Sending Bloom filter and querying mempool
+[NioClientManager] INFO org.bitcoinj.net.NioClientManager - Connected to testnet-seed.bluematt.me/69.59.18.23:18333
+[NioClientManager] INFO org.bitcoinj.core.Peer - Announcing to testnet-seed.bluematt.me/69.59.18.23:18333 as: /bitcoinj:0.15.6/
+[NioClientManager] INFO org.bitcoinj.core.Peer - Peer{[93.180.178.213]:18333, version=70015, subVer=/Satoshi:0.19.0.1/, services=1033 (NETWORK, WITNESS, NETWORK_LIMITED), time=2020-03-24 15:58:39, height=1670950}
+[NioClientManager] INFO org.bitcoinj.core.PeerGroup - Peer{[93.180.178.213]:18333, version=70015, subVer=/Satoshi:0.19.0.1/, services=1033 (NETWORK, WITNESS, NETWORK_LIMITED), time=2020-03-24 15:58:39, height=1670950}: New peer      (6 connected, 5 pending, 12 max)
+[NioClientManager] INFO org.bitcoinj.core.Peer - Peer{[69.59.18.23]:18333, version=70015, subVer=/Satoshi:0.19.0/, services=1033 (NETWORK, WITNESS, NETWORK_LIMITED), time=2020-03-24 15:58:39, height=1670950}
+[NioClientManager] INFO org.bitcoinj.core.PeerGroup - Peer{[69.59.18.23]:18333, version=70015, subVer=/Satoshi:0.19.0/, services=1033 (NETWORK, WITNESS, NETWORK_LIMITED), time=2020-03-24 15:58:39, height=1670950}: New peer      (7 connected, 4 pending, 12 max)
+[NioClientManager] INFO org.bitcoinj.core.PeerGroup - Setting download peer: Peer{[5.9.5.135]:18333, version=70015, subVer=/Satoshi:0.17.0.1/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2020-03-24 15:58:39, height=1670950}
+[NioClientManager] INFO org.bitcoinj.net.NioClientManager - Connected to seed.tbtc.petertodd.org/3.112.43.163:18333
+[NioClientManager] INFO org.bitcoinj.core.Peer - Announcing to seed.tbtc.petertodd.org/3.112.43.163:18333 as: /bitcoinj:0.15.6/
+[NioClientManager] INFO org.bitcoinj.core.Peer - Peer{[141.223.85.145]:18333, version=70015, subVer=/Satoshi:0.18.1/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2020-03-24 15:58:39, height=1670950}
+[NioClientManager] INFO org.bitcoinj.core.PeerGroup - Peer{[141.223.85.145]:18333, version=70015, subVer=/Satoshi:0.18.1/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2020-03-24 15:58:39, height=1670950}: New peer      (8 connected, 3 pending, 12 max)
+[NioClientManager] INFO org.bitcoinj.core.Peer - Peer{[141.223.85.145]:18333, version=70015, subVer=/Satoshi:0.18.1/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2020-03-24 15:58:39, height=1670950}: Sending Bloom filter and querying mempool
+[NioClientManager] INFO org.bitcoinj.core.PeerGroup - [141.223.85.145]:18333: Peer died      (7 connected, 3 pending, 12 max)
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Waiting 985 ms before next connect attempt to [69.197.185.106]:18333
+[NioClientManager] INFO org.bitcoinj.core.PeerGroup - [88.198.54.148]:18333: Peer died      (6 connected, 3 pending, 12 max)
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Waiting 1500 ms before next connect attempt to [2001:bc8:47a8:929:0:0:0:1]:18333
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Waiting 1390 ms before next connect attempt to [2a01:4f8:160:7106:0:0:0:2]:18333
+[NioClientManager] INFO org.bitcoinj.core.Peer - Peer{[3.112.43.163]:18333, version=70015, subVer=/Satoshi:0.18.0/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2020-03-24 15:58:40, height=1670950}
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Waiting 1359 ms before next connect attempt to [2001:bc8:47a8:929:0:0:0:1]:18333
+[NioClientManager] INFO org.bitcoinj.core.PeerGroup - Peer{[3.112.43.163]:18333, version=70015, subVer=/Satoshi:0.18.0/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2020-03-24 15:58:40, height=1670950}: New peer      (7 connected, 2 pending, 12 max)
+[NioClientManager] INFO org.bitcoinj.core.Peer - Peer{[3.112.43.163]:18333, version=70015, subVer=/Satoshi:0.18.0/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2020-03-24 15:58:40, height=1670950}: Sending Bloom filter and querying mempool
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Attempting connection to [2a01:4f8:160:7106:0:0:0:2]:18333     (7 connected, 3 pending, 12 max)
+[NioClientManager] WARN org.bitcoinj.net.NioClientManager - Failed to connect with exception: java.net.SocketException: Network is unreachable: no further information
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Attempting connection to [2001:bc8:47a8:929:0:0:0:1]:18333     (7 connected, 4 pending, 12 max)
+java.net.SocketException: Network is unreachable: no further information
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
+	at org.bitcoinj.net.NioClientManager.handleKey(NioClientManager.java:64)
+	at org.bitcoinj.net.NioClientManager.run(NioClientManager.java:122)
+	at com.google.common.util.concurrent.AbstractExecutionThreadService$1$2.run(AbstractExecutionThreadService.java:66)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:119)
+	at org.bitcoinj.utils.ContextPropagatingThreadFactory$1.run(ContextPropagatingThreadFactory.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Attempting connection to [69.197.185.106]:18333     (7 connected, 5 pending, 12 max)
+[NioClientManager] INFO org.bitcoinj.core.PeerGroup - [2a01:4f8:160:7106:0:0:0:2]:18333: Peer died      (7 connected, 4 pending, 12 max)
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Waiting 1016 ms before next connect attempt to [18.231.124.140]:18333
+[NioClientManager] WARN org.bitcoinj.net.NioClientManager - Failed to connect with exception: java.net.SocketException: Network is unreachable: no further information
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Waiting 1000 ms before next connect attempt to [80.5.144.115]:18333
+java.net.SocketException: Network is unreachable: no further information
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
+	at org.bitcoinj.net.NioClientManager.handleKey(NioClientManager.java:64)
+	at org.bitcoinj.net.NioClientManager.run(NioClientManager.java:122)
+	at com.google.common.util.concurrent.AbstractExecutionThreadService$1$2.run(AbstractExecutionThreadService.java:66)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:119)
+	at org.bitcoinj.utils.ContextPropagatingThreadFactory$1.run(ContextPropagatingThreadFactory.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Waiting 985 ms before next connect attempt to [18.231.124.140]:18333
+[NioClientManager] INFO org.bitcoinj.core.PeerGroup - [2001:bc8:47a8:929:0:0:0:1]:18333: Peer died      (7 connected, 3 pending, 12 max)
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Waiting 1500 ms before next connect attempt to [80.5.144.115]:18333
+[NioClientManager] INFO org.bitcoinj.net.NioClientManager - Connected to testnet-seed.bitcoin.jonasschnelli.ch/69.197.185.106:18333
+[NioClientManager] INFO org.bitcoinj.core.Peer - Announcing to testnet-seed.bitcoin.jonasschnelli.ch/69.197.185.106:18333 as: /bitcoinj:0.15.6/
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Waiting 1312 ms before next connect attempt to [47.52.31.232]:18333
+[NioClientManager] INFO org.bitcoinj.core.Peer - Peer{[69.197.185.106]:18333, version=70015, subVer=/Satoshi:0.19.1/, services=1033 (NETWORK, WITNESS, NETWORK_LIMITED), time=2020-03-24 15:58:40, height=1670950}
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Waiting 1297 ms before next connect attempt to [80.5.144.115]:18333
+[NioClientManager] INFO org.bitcoinj.core.PeerGroup - Peer{[69.197.185.106]:18333, version=70015, subVer=/Satoshi:0.19.1/, services=1033 (NETWORK, WITNESS, NETWORK_LIMITED), time=2020-03-24 15:58:40, height=1670950}: New peer      (8 connected, 2 pending, 12 max)
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Attempting connection to [47.52.31.232]:18333     (8 connected, 3 pending, 12 max)
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Attempting connection to [80.5.144.115]:18333     (8 connected, 4 pending, 12 max)
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Attempting connection to [18.231.124.140]:18333     (8 connected, 5 pending, 12 max)
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Attempting connection to [159.65.101.164]:18333     (8 connected, 6 pending, 12 max)
+[NioClientManager] WARN org.bitcoinj.net.NioClientManager - Failed to connect with exception: java.net.ConnectException: Connection refused: no further information
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup$ChainDownloadSpeedCalculator - End of sync detected.
+java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
+	at org.bitcoinj.net.NioClientManager.handleKey(NioClientManager.java:64)
+	at org.bitcoinj.net.NioClientManager.run(NioClientManager.java:122)
+	at com.google.common.util.concurrent.AbstractExecutionThreadService$1$2.run(AbstractExecutionThreadService.java:66)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:119)
+	at org.bitcoinj.utils.ContextPropagatingThreadFactory$1.run(ContextPropagatingThreadFactory.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+[NioClientManager] INFO org.bitcoinj.core.PeerGroup - [93.79.235.177]:18333: Peer died      (8 connected, 5 pending, 12 max)
+[AbstractTimeoutHandler timeouts] INFO org.bitcoinj.core.PeerSocketHandler - [2604:a880:2:d0:0:0:65:c001]:18333: Timed out
+[NioClientManager] INFO org.bitcoinj.net.NioClientManager - Connected to seed.testnet.bitcoin.sprovoost.nl/159.65.101.164:18333
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Waiting 1000 ms before next connect attempt to [128.230.209.67]:18333
+[NioClientManager] INFO org.bitcoinj.core.Peer - Announcing to seed.testnet.bitcoin.sprovoost.nl/159.65.101.164:18333 as: /bitcoinj:0.15.6/
+[AbstractTimeoutHandler timeouts] INFO org.bitcoinj.core.PeerGroup - [2604:a880:2:d0:0:0:65:c001]:18333: Peer died      (8 connected, 5 pending, 12 max)
+[AbstractTimeoutHandler timeouts] INFO org.bitcoinj.core.PeerSocketHandler - [2607:5300:60:8702:0:0:0:0]:18333: Timed out
+[AbstractTimeoutHandler timeouts] INFO org.bitcoinj.core.PeerGroup - [2607:5300:60:8702:0:0:0:0]:18333: Peer died      (8 connected, 5 pending, 12 max)
+[AbstractTimeoutHandler timeouts] INFO org.bitcoinj.core.PeerSocketHandler - [2001:41d0:403:422:0:0:0:0]:18333: Timed out
+[AbstractTimeoutHandler timeouts] INFO org.bitcoinj.core.PeerGroup - [2001:41d0:403:422:0:0:0:0]:18333: Peer died      (8 connected, 5 pending, 12 max)
+[NioClientManager] INFO org.bitcoinj.core.Peer - Peer{[159.65.101.164]:18333, version=70015, subVer=/Satoshi:0.18.0/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2020-03-24 15:58:41, height=1670950}
+[NioClientManager] INFO org.bitcoinj.core.PeerGroup - Peer{[159.65.101.164]:18333, version=70015, subVer=/Satoshi:0.18.0/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2020-03-24 15:58:41, height=1670950}: New peer      (9 connected, 4 pending, 12 max)
+[NioClientManager] INFO org.bitcoinj.core.Peer - Peer{[159.65.101.164]:18333, version=70015, subVer=/Satoshi:0.18.0/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2020-03-24 15:58:41, height=1670950}: Sending Bloom filter and querying mempool
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Attempting connection to [2001:0:4137:9e76:1c69:26c8:add1:5b6d]:18333     (9 connected, 5 pending, 12 max)
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Attempting connection to [2001:0:9d38:90d7:3cb6:17a4:d0cb:51f6]:18333     (9 connected, 6 pending, 12 max)
+[NioClientManager] WARN org.bitcoinj.net.NioClientManager - Failed to connect with exception: java.net.SocketException: Network is unreachable: no further information
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Attempting connection to [2a01:4f8:160:4425:0:0:0:2]:18333     (9 connected, 7 pending, 12 max)
+java.net.SocketException: Network is unreachable: no further information
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
+	at org.bitcoinj.net.NioClientManager.handleKey(NioClientManager.java:64)
+	at org.bitcoinj.net.NioClientManager.run(NioClientManager.java:122)
+	at com.google.common.util.concurrent.AbstractExecutionThreadService$1$2.run(AbstractExecutionThreadService.java:66)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:119)
+	at org.bitcoinj.utils.ContextPropagatingThreadFactory$1.run(ContextPropagatingThreadFactory.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+[NioClientManager] INFO org.bitcoinj.core.PeerGroup - [2001:0:4137:9e76:1c69:26c8:add1:5b6d]:18333: Peer died      (9 connected, 6 pending, 12 max)
+[NioClientManager] WARN org.bitcoinj.net.NioClientManager - Failed to connect with exception: java.net.SocketException: Network is unreachable: no further information
+java.net.SocketException: Network is unreachable: no further information
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
+	at org.bitcoinj.net.NioClientManager.handleKey(NioClientManager.java:64)
+	at org.bitcoinj.net.NioClientManager.run(NioClientManager.java:122)
+	at com.google.common.util.concurrent.AbstractExecutionThreadService$1$2.run(AbstractExecutionThreadService.java:66)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:119)
+	at org.bitcoinj.utils.ContextPropagatingThreadFactory$1.run(ContextPropagatingThreadFactory.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+[NioClientManager] INFO org.bitcoinj.core.PeerGroup - [2a01:4f8:160:4425:0:0:0:2]:18333: Peer died      (9 connected, 5 pending, 12 max)
+[NioClientManager] WARN org.bitcoinj.net.NioClientManager - Failed to connect with exception: java.net.SocketException: Network is unreachable: no further information
+java.net.SocketException: Network is unreachable: no further information
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
+	at org.bitcoinj.net.NioClientManager.handleKey(NioClientManager.java:64)
+	at org.bitcoinj.net.NioClientManager.run(NioClientManager.java:122)
+	at com.google.common.util.concurrent.AbstractExecutionThreadService$1$2.run(AbstractExecutionThreadService.java:66)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:119)
+	at org.bitcoinj.utils.ContextPropagatingThreadFactory$1.run(ContextPropagatingThreadFactory.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Waiting 1469 ms before next connect attempt to [192.99.16.146]:18333
+[NioClientManager] INFO org.bitcoinj.core.PeerGroup - [2001:0:9d38:90d7:3cb6:17a4:d0cb:51f6]:18333: Peer died      (9 connected, 4 pending, 12 max)
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Waiting 2250 ms before next connect attempt to [138.68.93.0]:18333
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Waiting 2250 ms before next connect attempt to [18.221.74.66]:18333
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Waiting 1953 ms before next connect attempt to [138.68.93.0]:18333
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Waiting 1938 ms before next connect attempt to [18.221.74.66]:18333
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Waiting 1922 ms before next connect attempt to [138.68.93.0]:18333
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Waiting 1797 ms before next connect attempt to [18.221.74.66]:18333
+[NioClientManager] WARN org.bitcoinj.net.NioClientManager - Failed to connect with exception: java.net.ConnectException: Connection refused: no further information
+java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
+	at org.bitcoinj.net.NioClientManager.handleKey(NioClientManager.java:64)
+	at org.bitcoinj.net.NioClientManager.run(NioClientManager.java:122)
+	at com.google.common.util.concurrent.AbstractExecutionThreadService$1$2.run(AbstractExecutionThreadService.java:66)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:119)
+	at org.bitcoinj.utils.ContextPropagatingThreadFactory$1.run(ContextPropagatingThreadFactory.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+[NioClientManager] INFO org.bitcoinj.core.PeerGroup - [18.231.124.140]:18333: Peer died      (9 connected, 3 pending, 12 max)
+[AbstractTimeoutHandler timeouts] INFO org.bitcoinj.core.PeerSocketHandler - [2620:6e:a000:1:43:43:43:43]:18333: Timed out
+[AbstractTimeoutHandler timeouts] INFO org.bitcoinj.core.PeerGroup - [2620:6e:a000:1:43:43:43:43]:18333: Peer died      (9 connected, 3 pending, 12 max)
+[AbstractTimeoutHandler timeouts] INFO org.bitcoinj.core.PeerSocketHandler - [2600:3c00:0:0:f03c:91ff:fe9e:7f03]:18333: Timed out
+[AbstractTimeoutHandler timeouts] INFO org.bitcoinj.core.PeerGroup - [2600:3c00:0:0:f03c:91ff:fe9e:7f03]:18333: Peer died      (9 connected, 3 pending, 12 max)
+[AbstractTimeoutHandler timeouts] INFO org.bitcoinj.core.PeerSocketHandler - [2001:41d0:8:c519:0:0:0:1]:18333: Timed out
+[AbstractTimeoutHandler timeouts] INFO org.bitcoinj.core.PeerGroup - [2001:41d0:8:c519:0:0:0:1]:18333: Peer died      (9 connected, 3 pending, 12 max)
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Waiting 9687 ms before next connect attempt to [138.68.93.0]:18333
+[AbstractTimeoutHandler timeouts] INFO org.bitcoinj.core.PeerSocketHandler - [2001:985:55a0:1:0:0:0:2]:18333: Timed out
+[AbstractTimeoutHandler timeouts] INFO org.bitcoinj.core.PeerGroup - [2001:985:55a0:1:0:0:0:2]:18333: Peer died      (9 connected, 3 pending, 12 max)
+[AbstractTimeoutHandler timeouts] INFO org.bitcoinj.core.PeerSocketHandler - [2001:0:9d38:90d7:433:113d:355b:3ed4]:18333: Timed out
+[AbstractTimeoutHandler timeouts] INFO org.bitcoinj.core.PeerGroup - [2001:0:9d38:90d7:433:113d:355b:3ed4]:18333: Peer died      (9 connected, 3 pending, 12 max)
+[AbstractTimeoutHandler timeouts] INFO org.bitcoinj.core.PeerSocketHandler - [99.159.25.149]:18333: Timed out
+[AbstractTimeoutHandler timeouts] INFO org.bitcoinj.core.PeerGroup - [99.159.25.149]:18333: Peer died      (9 connected, 2 pending, 12 max)
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Waiting 10000 ms before next connect attempt to [95.217.50.49]:18333
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Waiting 9735 ms before next connect attempt to [52.198.29.250]:18333
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Waiting 9735 ms before next connect attempt to [95.217.50.49]:18333
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Waiting 9735 ms before next connect attempt to [52.198.29.250]:18333
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Waiting 9735 ms before next connect attempt to [95.217.50.49]:18333
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Waiting 9719 ms before next connect attempt to [52.198.29.250]:18333
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Waiting 9719 ms before next connect attempt to [95.217.50.49]:18333
+[AbstractTimeoutHandler timeouts] INFO org.bitcoinj.core.PeerSocketHandler - [2a01:7c8:aaca:421:5054:ff:fef4:b292]:18333: Timed out
+[AbstractTimeoutHandler timeouts] INFO org.bitcoinj.core.PeerGroup - [2a01:7c8:aaca:421:5054:ff:fef4:b292]:18333: Peer died      (9 connected, 2 pending, 12 max)
+[AbstractTimeoutHandler timeouts] INFO org.bitcoinj.core.PeerSocketHandler - [fd87:d87e:eb43:6a8b:d278:3f7a:f892:8f80]:18333: Timed out
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Waiting 10000 ms before next connect attempt to [52.198.29.250]:18333
+[AbstractTimeoutHandler timeouts] INFO org.bitcoinj.core.PeerGroup - [fd87:d87e:eb43:6a8b:d278:3f7a:f892:8f80]:18333: Peer died      (9 connected, 2 pending, 12 max)
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Waiting 10000 ms before next connect attempt to [2001:0:9d38:6abd:2895:110d:983e:a70e]:18333
+[AbstractTimeoutHandler timeouts] INFO org.bitcoinj.core.PeerSocketHandler - [93.79.235.177]:18333: Timed out
+[AbstractTimeoutHandler timeouts] INFO org.bitcoinj.core.PeerGroup - [93.79.235.177]:18333: Peer died      (9 connected, 2 pending, 12 max)
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Waiting 10000 ms before next connect attempt to [95.216.73.96]:18333
+[AbstractTimeoutHandler timeouts] INFO org.bitcoinj.core.PeerSocketHandler - [2a01:4f8:160:7106:0:0:0:2]:18333: Timed out
+[AbstractTimeoutHandler timeouts] INFO org.bitcoinj.core.PeerGroup - [2a01:4f8:160:7106:0:0:0:2]:18333: Peer died      (9 connected, 2 pending, 12 max)
+[AbstractTimeoutHandler timeouts] INFO org.bitcoinj.core.PeerSocketHandler - [2001:bc8:47a8:929:0:0:0:1]:18333: Timed out
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Waiting 10000 ms before next connect attempt to [94.79.55.28]:18333
+[AbstractTimeoutHandler timeouts] INFO org.bitcoinj.core.PeerGroup - [2001:bc8:47a8:929:0:0:0:1]:18333: Peer died      (9 connected, 2 pending, 12 max)
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Waiting 10000 ms before next connect attempt to [173.248.226.43]:18333
+[AbstractTimeoutHandler timeouts] INFO org.bitcoinj.core.PeerSocketHandler - [47.52.31.232]:18333: Timed out
+[AbstractTimeoutHandler timeouts] INFO org.bitcoinj.core.PeerGroup - [47.52.31.232]:18333: Peer died      (9 connected, 1 pending, 12 max)
+[AbstractTimeoutHandler timeouts] INFO org.bitcoinj.core.PeerSocketHandler - [80.5.144.115]:18333: Timed out
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Waiting 10000 ms before next connect attempt to [109.233.109.26]:18333
+[AbstractTimeoutHandler timeouts] INFO org.bitcoinj.core.PeerGroup - [80.5.144.115]:18333: Peer died      (9 connected, 0 pending, 12 max)
+[AbstractTimeoutHandler timeouts] INFO org.bitcoinj.core.PeerSocketHandler - [18.231.124.140]:18333: Timed out
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Waiting 10000 ms before next connect attempt to [175.207.13.27]:18333
+[AbstractTimeoutHandler timeouts] INFO org.bitcoinj.core.PeerGroup - [18.231.124.140]:18333: Peer died      (9 connected, 0 pending, 12 max)
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Waiting 10000 ms before next connect attempt to [2001:e68:6dc9:b801:5d92:276b:9a0c:fe87]:18333
+[AbstractTimeoutHandler timeouts] INFO org.bitcoinj.core.PeerSocketHandler - [2001:0:4137:9e76:1c69:26c8:add1:5b6d]:18333: Timed out
+[AbstractTimeoutHandler timeouts] INFO org.bitcoinj.core.PeerGroup - [2001:0:4137:9e76:1c69:26c8:add1:5b6d]:18333: Peer died      (9 connected, 0 pending, 12 max)
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Waiting 10000 ms before next connect attempt to [52.7.195.1]:18333
+[AbstractTimeoutHandler timeouts] INFO org.bitcoinj.core.PeerSocketHandler - [2001:0:9d38:90d7:3cb6:17a4:d0cb:51f6]:18333: Timed out
+[AbstractTimeoutHandler timeouts] INFO org.bitcoinj.core.PeerGroup - [2001:0:9d38:90d7:3cb6:17a4:d0cb:51f6]:18333: Peer died      (9 connected, 0 pending, 12 max)
+[AbstractTimeoutHandler timeouts] INFO org.bitcoinj.core.PeerSocketHandler - [2a01:4f8:160:4425:0:0:0:2]:18333: Timed out
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Waiting 10000 ms before next connect attempt to [79.98.159.7]:18333
+[AbstractTimeoutHandler timeouts] INFO org.bitcoinj.core.PeerGroup - [2a01:4f8:160:4425:0:0:0:2]:18333: Peer died      (9 connected, 0 pending, 12 max)
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Waiting 10000 ms before next connect attempt to [59.9.255.72]:18333
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Waiting 3735 ms before next connect attempt to [206.189.166.210]:18333
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Waiting 2907 ms before next connect attempt to [59.9.255.72]:18333
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Waiting 2891 ms before next connect attempt to [206.189.166.210]:18333
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Waiting 2875 ms before next connect attempt to [59.9.255.72]:18333
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Waiting 2860 ms before next connect attempt to [206.189.166.210]:18333
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Waiting 2844 ms before next connect attempt to [59.9.255.72]:18333
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Waiting 2844 ms before next connect attempt to [206.189.166.210]:18333
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Waiting 2828 ms before next connect attempt to [59.9.255.72]:18333
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Waiting 2000 ms before next connect attempt to [206.189.166.210]:18333
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Waiting 1985 ms before next connect attempt to [59.9.255.72]:18333
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Waiting 1953 ms before next connect attempt to [206.189.166.210]:18333
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Waiting 1219 ms before next connect attempt to [59.9.255.72]:18333
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Waiting 1188 ms before next connect attempt to [206.189.166.210]:18333
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Waiting 750 ms before next connect attempt to [59.9.255.72]:18333
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Waiting 719 ms before next connect attempt to [206.189.166.210]:18333
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Waiting 688 ms before next connect attempt to [59.9.255.72]:18333
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Waiting 94 ms before next connect attempt to [206.189.166.210]:18333
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Waiting 1 ms before next connect attempt to [59.9.255.72]:18333
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Attempting connection to [206.189.166.210]:18333     (9 connected, 1 pending, 12 max)
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Attempting connection to [59.9.255.72]:18333     (9 connected, 2 pending, 12 max)
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Attempting connection to [79.98.159.7]:18333     (9 connected, 3 pending, 12 max)
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Attempting connection to [52.7.195.1]:18333     (9 connected, 4 pending, 12 max)
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Attempting connection to [2001:e68:6dc9:b801:5d92:276b:9a0c:fe87]:18333     (9 connected, 5 pending, 12 max)
+[NioClientManager] INFO org.bitcoinj.net.NioClientManager - Connected to seed.tbtc.petertodd.org/79.98.159.7:18333
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Attempting connection to [175.207.13.27]:18333     (9 connected, 6 pending, 12 max)
+[NioClientManager] INFO org.bitcoinj.core.Peer - Announcing to seed.tbtc.petertodd.org/79.98.159.7:18333 as: /bitcoinj:0.15.6/
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Attempting connection to [109.233.109.26]:18333     (9 connected, 7 pending, 12 max)
+[NioClientManager] WARN org.bitcoinj.net.NioClientManager - Failed to connect with exception: java.net.SocketException: Network is unreachable: no further information
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Attempting connection to [173.248.226.43]:18333     (9 connected, 8 pending, 12 max)
+java.net.SocketException: Network is unreachable: no further information
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
+	at org.bitcoinj.net.NioClientManager.handleKey(NioClientManager.java:64)
+	at org.bitcoinj.net.NioClientManager.run(NioClientManager.java:122)
+	at com.google.common.util.concurrent.AbstractExecutionThreadService$1$2.run(AbstractExecutionThreadService.java:66)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:119)
+	at org.bitcoinj.utils.ContextPropagatingThreadFactory$1.run(ContextPropagatingThreadFactory.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Attempting connection to [94.79.55.28]:18333     (9 connected, 9 pending, 12 max)
+[NioClientManager] INFO org.bitcoinj.core.PeerGroup - [2001:e68:6dc9:b801:5d92:276b:9a0c:fe87]:18333: Peer died      (9 connected, 8 pending, 12 max)
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Waiting 10016 ms before next connect attempt to [95.216.73.96]:18333
+[NioClientManager] INFO org.bitcoinj.core.Peer - Peer{[79.98.159.7]:18333, version=70015, subVer=/Satoshi:0.19.0.1/, services=1033 (NETWORK, WITNESS, NETWORK_LIMITED), time=2020-03-24 15:58:56, height=1670950}
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Waiting 9969 ms before next connect attempt to [18.136.208.99]:18333
+[NioClientManager] INFO org.bitcoinj.core.PeerGroup - Peer{[79.98.159.7]:18333, version=70015, subVer=/Satoshi:0.19.0.1/, services=1033 (NETWORK, WITNESS, NETWORK_LIMITED), time=2020-03-24 15:58:56, height=1670950}: New peer      (10 connected, 7 pending, 12 max)
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Attempting connection to [95.216.73.96]:18333     (10 connected, 8 pending, 12 max)
+[NioClientManager] INFO org.bitcoinj.net.NioClientManager - Connected to seed.testnet.bitcoin.sprovoost.nl/206.189.166.210:18333
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Attempting connection to [18.136.208.99]:18333     (10 connected, 9 pending, 12 max)
+[NioClientManager] INFO org.bitcoinj.core.Peer - Announcing to seed.testnet.bitcoin.sprovoost.nl/206.189.166.210:18333 as: /bitcoinj:0.15.6/
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Attempting connection to [2001:0:9d38:6abd:2895:110d:983e:a70e]:18333     (10 connected, 10 pending, 12 max)
+[NioClientManager] INFO org.bitcoinj.net.NioClientManager - Connected to testnet-seed.bitcoin.jonasschnelli.ch/52.7.195.1:18333
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Attempting connection to [52.198.29.250]:18333     (10 connected, 11 pending, 12 max)
+[NioClientManager] INFO org.bitcoinj.core.Peer - Announcing to testnet-seed.bitcoin.jonasschnelli.ch/52.7.195.1:18333 as: /bitcoinj:0.15.6/
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Attempting connection to [95.217.50.49]:18333     (10 connected, 12 pending, 12 max)
+[NioClientManager] INFO org.bitcoinj.net.NioClientManager - Connected to testnet-seed.bitcoin.jonasschnelli.ch/109.233.109.26:18333
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Attempting connection to [2401:d002:4402:0:bf1d:986a:7598:6d49]:18333     (10 connected, 13 pending, 12 max)
+[NioClientManager] INFO org.bitcoinj.core.Peer - Announcing to testnet-seed.bitcoin.jonasschnelli.ch/109.233.109.26:18333 as: /bitcoinj:0.15.6/
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Attempting connection to [52.197.170.28]:18333     (10 connected, 14 pending, 12 max)
+[NioClientManager] WARN org.bitcoinj.net.NioClientManager - Failed to connect with exception: java.net.SocketException: Network is unreachable: no further information
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Attempting connection to [138.68.93.0]:18333     (10 connected, 15 pending, 12 max)
+java.net.SocketException: Network is unreachable: no further information
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
+	at org.bitcoinj.net.NioClientManager.handleKey(NioClientManager.java:64)
+	at org.bitcoinj.net.NioClientManager.run(NioClientManager.java:122)
+	at com.google.common.util.concurrent.AbstractExecutionThreadService$1$2.run(AbstractExecutionThreadService.java:66)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:119)
+	at org.bitcoinj.utils.ContextPropagatingThreadFactory$1.run(ContextPropagatingThreadFactory.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Attempting connection to [148.251.191.74]:18333     (10 connected, 16 pending, 12 max)
+[NioClientManager] INFO org.bitcoinj.core.PeerGroup - [2001:0:9d38:6abd:2895:110d:983e:a70e]:18333: Peer died      (10 connected, 15 pending, 12 max)
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Waiting 1015 ms before next connect attempt to [94.23.35.5]:18333
+[NioClientManager] INFO org.bitcoinj.net.NioClientManager - Connected to seed.testnet.bitcoin.sprovoost.nl/95.216.73.96:18333
+[NioClientManager] INFO org.bitcoinj.core.Peer - Announcing to seed.testnet.bitcoin.sprovoost.nl/95.216.73.96:18333 as: /bitcoinj:0.15.6/
+[NioClientManager] INFO org.bitcoinj.net.NioClientManager - Connected to seed.tbtc.petertodd.org/94.79.55.28:18333
+[NioClientManager] INFO org.bitcoinj.core.Peer - Announcing to seed.tbtc.petertodd.org/94.79.55.28:18333 as: /bitcoinj:0.15.6/
+[NioClientManager] INFO org.bitcoinj.net.NioClientManager - Connected to testnet-seed.bitcoin.jonasschnelli.ch/173.248.226.43:18333
+[NioClientManager] INFO org.bitcoinj.core.Peer - Announcing to testnet-seed.bitcoin.jonasschnelli.ch/173.248.226.43:18333 as: /bitcoinj:0.15.6/
+[NioClientManager] INFO org.bitcoinj.net.NioClientManager - Connected to seed.tbtc.petertodd.org/148.251.191.74:18333
+[NioClientManager] INFO org.bitcoinj.core.Peer - Announcing to seed.tbtc.petertodd.org/148.251.191.74:18333 as: /bitcoinj:0.15.6/
+[NioClientManager] INFO org.bitcoinj.core.PeerGroup - [173.248.226.43]:18333: Peer died      (10 connected, 14 pending, 12 max)
+[NioClientManager] INFO org.bitcoinj.net.NioClientManager - Connected to seed.testnet.bitcoin.sprovoost.nl/52.198.29.250:18333
+[NioClientManager] INFO org.bitcoinj.core.Peer - Announcing to seed.testnet.bitcoin.sprovoost.nl/52.198.29.250:18333 as: /bitcoinj:0.15.6/
+[NioClientManager] INFO org.bitcoinj.core.PeerGroup - [206.189.166.210]:18333: Peer died      (10 connected, 13 pending, 12 max)
+[NioClientManager] INFO org.bitcoinj.net.NioClientManager - Connected to seed.testnet.bitcoin.sprovoost.nl/18.136.208.99:18333
+[NioClientManager] INFO org.bitcoinj.core.Peer - Announcing to seed.testnet.bitcoin.sprovoost.nl/18.136.208.99:18333 as: /bitcoinj:0.15.6/
+[NioClientManager] WARN org.bitcoinj.net.NioClientManager - Failed to connect with exception: java.net.SocketException: Network is unreachable: no further information
+java.net.SocketException: Network is unreachable: no further information
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
+	at org.bitcoinj.net.NioClientManager.handleKey(NioClientManager.java:64)
+	at org.bitcoinj.net.NioClientManager.run(NioClientManager.java:122)
+	at com.google.common.util.concurrent.AbstractExecutionThreadService$1$2.run(AbstractExecutionThreadService.java:66)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:119)
+	at org.bitcoinj.utils.ContextPropagatingThreadFactory$1.run(ContextPropagatingThreadFactory.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+[NioClientManager] INFO org.bitcoinj.core.PeerGroup - [2401:d002:4402:0:bf1d:986a:7598:6d49]:18333: Peer died      (10 connected, 12 pending, 12 max)
+[NioClientManager] INFO org.bitcoinj.net.NioClientManager - Connected to seed.testnet.bitcoin.sprovoost.nl/95.217.50.49:18333
+[NioClientManager] INFO org.bitcoinj.core.Peer - Announcing to seed.testnet.bitcoin.sprovoost.nl/95.217.50.49:18333 as: /bitcoinj:0.15.6/
+[NioClientManager] INFO org.bitcoinj.net.NioClientManager - Connected to seed.testnet.bitcoin.sprovoost.nl/52.197.170.28:18333
+[NioClientManager] INFO org.bitcoinj.core.Peer - Announcing to seed.testnet.bitcoin.sprovoost.nl/52.197.170.28:18333 as: /bitcoinj:0.15.6/
+[NioClientManager] INFO org.bitcoinj.core.Peer - Peer{[95.216.73.96]:18333, version=70015, subVer=/Satoshi:0.19.1/, services=1033 (NETWORK, WITNESS, NETWORK_LIMITED), time=2020-03-24 15:58:57, height=1670950}
+[NioClientManager] INFO org.bitcoinj.core.PeerGroup - Peer{[95.216.73.96]:18333, version=70015, subVer=/Satoshi:0.19.1/, services=1033 (NETWORK, WITNESS, NETWORK_LIMITED), time=2020-03-24 15:58:57, height=1670950}: New peer      (11 connected, 11 pending, 12 max)
+[NioClientManager] INFO org.bitcoinj.core.Peer - Peer{[109.233.109.26]:18333, version=70015, subVer=/Satoshi:0.19.0.1/, services=1033 (NETWORK, WITNESS, NETWORK_LIMITED), time=2020-03-24 15:58:57, height=1670950}
+[NioClientManager] INFO org.bitcoinj.core.PeerGroup - Peer{[109.233.109.26]:18333, version=70015, subVer=/Satoshi:0.19.0.1/, services=1033 (NETWORK, WITNESS, NETWORK_LIMITED), time=2020-03-24 15:58:57, height=1670950}: New peer      (12 connected, 10 pending, 12 max)
+[NioClientManager] INFO org.bitcoinj.core.Peer - Peer{[94.79.55.28]:18333, version=70015, subVer=/Satoshi:0.16.3/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2020-03-24 15:58:57, height=1670950}
+[NioClientManager] INFO org.bitcoinj.core.PeerGroup - Peer{[94.79.55.28]:18333, version=70015, subVer=/Satoshi:0.16.3/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2020-03-24 15:58:57, height=1670950}: New peer      (13 connected, 9 pending, 12 max)
+[NioClientManager] INFO org.bitcoinj.core.Peer - Peer{[94.79.55.28]:18333, version=70015, subVer=/Satoshi:0.16.3/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2020-03-24 15:58:57, height=1670950}: Sending Bloom filter and querying mempool
+[NioClientManager] INFO org.bitcoinj.core.Peer - Peer{[52.7.195.1]:18333, version=70015, subVer=/Satoshi:0.18.0/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2020-03-24 15:58:57, height=1670950}
+[NioClientManager] INFO org.bitcoinj.core.PeerGroup - Peer{[52.7.195.1]:18333, version=70015, subVer=/Satoshi:0.18.0/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2020-03-24 15:58:57, height=1670950}: New peer      (14 connected, 8 pending, 12 max)
+[NioClientManager] INFO org.bitcoinj.core.Peer - Peer{[52.7.195.1]:18333, version=70015, subVer=/Satoshi:0.18.0/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2020-03-24 15:58:57, height=1670950}: Sending Bloom filter and querying mempool
+[NioClientManager] INFO org.bitcoinj.core.Peer - Peer{[148.251.191.74]:18333, version=70015, subVer=/Satoshi:0.14.2/, services=13 (NETWORK, BLOOM, WITNESS), time=2020-03-24 15:58:57, height=1670950}
+[NioClientManager] INFO org.bitcoinj.core.PeerGroup - Peer{[148.251.191.74]:18333, version=70015, subVer=/Satoshi:0.14.2/, services=13 (NETWORK, BLOOM, WITNESS), time=2020-03-24 15:58:57, height=1670950}: New peer      (15 connected, 7 pending, 12 max)
+[NioClientManager] INFO org.bitcoinj.core.Peer - Peer{[148.251.191.74]:18333, version=70015, subVer=/Satoshi:0.14.2/, services=13 (NETWORK, BLOOM, WITNESS), time=2020-03-24 15:58:57, height=1670950}: Sending Bloom filter and querying mempool
+[NioClientManager] INFO org.bitcoinj.core.Peer - Peer{[95.217.50.49]:18333, version=70015, subVer=/Satoshi:0.19.1/, services=1033 (NETWORK, WITNESS, NETWORK_LIMITED), time=2020-03-24 15:58:57, height=1670950}
+[NioClientManager] INFO org.bitcoinj.core.PeerGroup - Peer{[95.217.50.49]:18333, version=70015, subVer=/Satoshi:0.19.1/, services=1033 (NETWORK, WITNESS, NETWORK_LIMITED), time=2020-03-24 15:58:57, height=1670950}: New peer      (16 connected, 6 pending, 12 max)
+[NioClientManager] INFO org.bitcoinj.core.PeerGroup - [52.198.29.250]:18333: Peer died      (16 connected, 5 pending, 12 max)
+[NioClientManager] INFO org.bitcoinj.core.Peer - Peer{[18.136.208.99]:18333, version=70012, subVer=/Satoshi:0.12.1(bitcore)/, services=5 (NETWORK, BLOOM), time=2020-03-24 15:58:56, height=1670950}
+[NioClientManager] INFO org.bitcoinj.core.PeerGroup - Peer{[18.136.208.99]:18333, version=70012, subVer=/Satoshi:0.12.1(bitcore)/, services=5 (NETWORK, BLOOM), time=2020-03-24 15:58:56, height=1670950}: New peer      (17 connected, 4 pending, 12 max)
+[NioClientManager] INFO org.bitcoinj.core.Peer - Peer{[18.136.208.99]:18333, version=70012, subVer=/Satoshi:0.12.1(bitcore)/, services=5 (NETWORK, BLOOM), time=2020-03-24 15:58:56, height=1670950}: Sending Bloom filter and querying mempool
+[NioClientManager] INFO org.bitcoinj.core.Peer - Peer{[52.197.170.28]:18333, version=70015, subVer=/Satoshi:0.16.0/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2020-03-24 15:58:57, height=1414448}
+[NioClientManager] INFO org.bitcoinj.core.PeerGroup - Peer{[52.197.170.28]:18333, version=70015, subVer=/Satoshi:0.16.0/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2020-03-24 15:58:57, height=1414448}: New peer      (18 connected, 3 pending, 12 max)
+[NioClientManager] INFO org.bitcoinj.core.Peer - Peer{[52.197.170.28]:18333, version=70015, subVer=/Satoshi:0.16.0/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2020-03-24 15:58:57, height=1414448}: Sending Bloom filter and querying mempool
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Attempting connection to [52.1.65.208]:18333     (18 connected, 4 pending, 12 max)
+[NioClientManager] INFO org.bitcoinj.net.NioClientManager - Connected to seed.tbtc.petertodd.org/52.1.65.208:18333
+[NioClientManager] INFO org.bitcoinj.core.Peer - Announcing to seed.tbtc.petertodd.org/52.1.65.208:18333 as: /bitcoinj:0.15.6/
+[NioClientManager] INFO org.bitcoinj.core.Peer - Peer{[52.1.65.208]:18333, version=70012, subVer=/Satoshi:0.12.1/, services=5 (NETWORK, BLOOM), time=2020-03-24 15:58:58, height=1670950}
+[NioClientManager] INFO org.bitcoinj.core.PeerGroup - Peer{[52.1.65.208]:18333, version=70012, subVer=/Satoshi:0.12.1/, services=5 (NETWORK, BLOOM), time=2020-03-24 15:58:58, height=1670950}: New peer      (19 connected, 3 pending, 12 max)
+[NioClientManager] INFO org.bitcoinj.core.Peer - Peer{[52.1.65.208]:18333, version=70012, subVer=/Satoshi:0.12.1/, services=5 (NETWORK, BLOOM), time=2020-03-24 15:58:58, height=1670950}: Sending Bloom filter and querying mempool
+[NioClientManager] INFO org.bitcoinj.core.PeerGroup - [99.159.25.149]:18333: Peer died      (19 connected, 3 pending, 12 max)
+[NioClientManager] WARN org.bitcoinj.net.NioClientManager - Failed to connect with exception: java.nio.channels.ClosedChannelException: null
+java.nio.channels.ClosedChannelException
+	at java.base/sun.nio.ch.SocketChannelImpl.ensureOpen(SocketChannelImpl.java:160)
+	at java.base/sun.nio.ch.SocketChannelImpl.beginFinishConnect(SocketChannelImpl.java:726)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:772)
+	at org.bitcoinj.net.NioClientManager.handleKey(NioClientManager.java:64)
+	at org.bitcoinj.net.NioClientManager.run(NioClientManager.java:122)
+	at com.google.common.util.concurrent.AbstractExecutionThreadService$1$2.run(AbstractExecutionThreadService.java:66)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:119)
+	at org.bitcoinj.utils.ContextPropagatingThreadFactory$1.run(ContextPropagatingThreadFactory.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+[AbstractTimeoutHandler timeouts] INFO org.bitcoinj.core.PeerSocketHandler - [206.189.166.210]:18333: Timed out
+[AbstractTimeoutHandler timeouts] INFO org.bitcoinj.core.PeerSocketHandler - [59.9.255.72]:18333: Timed out
+[AbstractTimeoutHandler timeouts] INFO org.bitcoinj.core.PeerGroup - [59.9.255.72]:18333: Peer died      (19 connected, 2 pending, 12 max)
+[AbstractTimeoutHandler timeouts] INFO org.bitcoinj.core.PeerSocketHandler - [2001:e68:6dc9:b801:5d92:276b:9a0c:fe87]:18333: Timed out
+[AbstractTimeoutHandler timeouts] INFO org.bitcoinj.core.PeerGroup - [2001:e68:6dc9:b801:5d92:276b:9a0c:fe87]:18333: Peer died      (19 connected, 2 pending, 12 max)
+[AbstractTimeoutHandler timeouts] INFO org.bitcoinj.core.PeerSocketHandler - [175.207.13.27]:18333: Timed out
+[AbstractTimeoutHandler timeouts] INFO org.bitcoinj.core.PeerGroup - [175.207.13.27]:18333: Peer died      (19 connected, 1 pending, 12 max)
+[AbstractTimeoutHandler timeouts] INFO org.bitcoinj.core.PeerSocketHandler - [173.248.226.43]:18333: Timed out
+[NioClientManager] INFO org.bitcoinj.core.PeerGroup - [47.52.31.232]:18333: Peer died      (19 connected, 1 pending, 12 max)
+[NioClientManager] WARN org.bitcoinj.net.NioClientManager - Failed to connect with exception: java.nio.channels.ClosedChannelException: null
+java.nio.channels.ClosedChannelException
+	at java.base/sun.nio.ch.SocketChannelImpl.ensureOpen(SocketChannelImpl.java:160)
+	at java.base/sun.nio.ch.SocketChannelImpl.beginFinishConnect(SocketChannelImpl.java:726)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:772)
+	at org.bitcoinj.net.NioClientManager.handleKey(NioClientManager.java:64)
+	at org.bitcoinj.net.NioClientManager.run(NioClientManager.java:122)
+	at com.google.common.util.concurrent.AbstractExecutionThreadService$1$2.run(AbstractExecutionThreadService.java:66)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:119)
+	at org.bitcoinj.utils.ContextPropagatingThreadFactory$1.run(ContextPropagatingThreadFactory.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+[NioClientManager] INFO org.bitcoinj.core.PeerGroup - [80.5.144.115]:18333: Peer died      (19 connected, 1 pending, 12 max)
+[NioClientManager] WARN org.bitcoinj.net.NioClientManager - Failed to connect with exception: java.nio.channels.ClosedChannelException: null
+java.nio.channels.ClosedChannelException
+	at java.base/sun.nio.ch.SocketChannelImpl.ensureOpen(SocketChannelImpl.java:160)
+	at java.base/sun.nio.ch.SocketChannelImpl.beginFinishConnect(SocketChannelImpl.java:726)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:772)
+	at org.bitcoinj.net.NioClientManager.handleKey(NioClientManager.java:64)
+	at org.bitcoinj.net.NioClientManager.run(NioClientManager.java:122)
+	at com.google.common.util.concurrent.AbstractExecutionThreadService$1$2.run(AbstractExecutionThreadService.java:66)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:119)
+	at org.bitcoinj.utils.ContextPropagatingThreadFactory$1.run(ContextPropagatingThreadFactory.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+[AbstractTimeoutHandler timeouts] INFO org.bitcoinj.core.PeerSocketHandler - [2001:0:9d38:6abd:2895:110d:983e:a70e]:18333: Timed out
+[AbstractTimeoutHandler timeouts] INFO org.bitcoinj.core.PeerGroup - [2001:0:9d38:6abd:2895:110d:983e:a70e]:18333: Peer died      (19 connected, 1 pending, 12 max)
+[AbstractTimeoutHandler timeouts] INFO org.bitcoinj.core.PeerSocketHandler - [52.198.29.250]:18333: Timed out
+[AbstractTimeoutHandler timeouts] INFO org.bitcoinj.core.PeerSocketHandler - [2401:d002:4402:0:bf1d:986a:7598:6d49]:18333: Timed out
+[AbstractTimeoutHandler timeouts] INFO org.bitcoinj.core.PeerGroup - [2401:d002:4402:0:bf1d:986a:7598:6d49]:18333: Peer died      (19 connected, 1 pending, 12 max)
+[AbstractTimeoutHandler timeouts] INFO org.bitcoinj.core.PeerSocketHandler - [138.68.93.0]:18333: Timed out
+[AbstractTimeoutHandler timeouts] INFO org.bitcoinj.core.PeerGroup - [138.68.93.0]:18333: Peer died      (19 connected, 0 pending, 12 max)
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Waiting 5297 ms before next connect attempt to [5.189.146.12]:18333
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Waiting 5250 ms before next connect attempt to [89.47.163.26]:18333
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Attempting connection to [5.189.146.12]:18333     (19 connected, 1 pending, 12 max)
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Attempting connection to [89.47.163.26]:18333     (19 connected, 2 pending, 12 max)
+[NioClientManager] INFO org.bitcoinj.net.NioClientManager - Connected to seed.tbtc.petertodd.org/89.47.163.26:18333
+[NioClientManager] INFO org.bitcoinj.core.Peer - Announcing to seed.tbtc.petertodd.org/89.47.163.26:18333 as: /bitcoinj:0.15.6/
+[NioClientManager] INFO org.bitcoinj.core.Peer - Peer{[89.47.163.26]:18333, version=70015, subVer=/Satoshi:0.19.0.1/, services=1033 (NETWORK, WITNESS, NETWORK_LIMITED), time=2020-03-24 15:59:12, height=1670950}
+[NioClientManager] INFO org.bitcoinj.core.PeerGroup - Peer{[89.47.163.26]:18333, version=70015, subVer=/Satoshi:0.19.0.1/, services=1033 (NETWORK, WITNESS, NETWORK_LIMITED), time=2020-03-24 15:59:12, height=1670950}: New peer      (20 connected, 1 pending, 12 max)
+[NioClientManager] INFO org.bitcoinj.core.PeerGroup - [89.47.163.26]:18333: Peer died      (19 connected, 1 pending, 12 max)
+[NioClientManager] WARN org.bitcoinj.net.NioClientManager - Failed to connect with exception: java.net.ConnectException: Connection refused: no further information
+java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
+	at org.bitcoinj.net.NioClientManager.handleKey(NioClientManager.java:64)
+	at org.bitcoinj.net.NioClientManager.run(NioClientManager.java:122)
+	at com.google.common.util.concurrent.AbstractExecutionThreadService$1$2.run(AbstractExecutionThreadService.java:66)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:119)
+	at org.bitcoinj.utils.ContextPropagatingThreadFactory$1.run(ContextPropagatingThreadFactory.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+[NioClientManager] INFO org.bitcoinj.core.PeerGroup - [5.189.146.12]:18333: Peer died      (19 connected, 0 pending, 12 max)
+[AbstractTimeoutHandler timeouts] INFO org.bitcoinj.core.PeerSocketHandler - [5.189.146.12]:18333: Timed out
+[AbstractTimeoutHandler timeouts] INFO org.bitcoinj.core.PeerGroup - [5.189.146.12]:18333: Peer died      (19 connected, 0 pending, 12 max)
+[NioClientManager] INFO org.bitcoinj.core.PeerGroup - [59.9.255.72]:18333: Peer died      (19 connected, 0 pending, 12 max)
+[NioClientManager] WARN org.bitcoinj.net.NioClientManager - Failed to connect with exception: java.nio.channels.ClosedChannelException: null
+java.nio.channels.ClosedChannelException
+	at java.base/sun.nio.ch.SocketChannelImpl.ensureOpen(SocketChannelImpl.java:160)
+	at java.base/sun.nio.ch.SocketChannelImpl.beginFinishConnect(SocketChannelImpl.java:726)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:772)
+	at org.bitcoinj.net.NioClientManager.handleKey(NioClientManager.java:64)
+	at org.bitcoinj.net.NioClientManager.run(NioClientManager.java:122)
+	at com.google.common.util.concurrent.AbstractExecutionThreadService$1$2.run(AbstractExecutionThreadService.java:66)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:119)
+	at org.bitcoinj.utils.ContextPropagatingThreadFactory$1.run(ContextPropagatingThreadFactory.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+[NioClientManager] INFO org.bitcoinj.core.PeerGroup - [175.207.13.27]:18333: Peer died      (19 connected, 0 pending, 12 max)
+[NioClientManager] WARN org.bitcoinj.net.NioClientManager - Failed to connect with exception: java.nio.channels.ClosedChannelException: null
+java.nio.channels.ClosedChannelException
+	at java.base/sun.nio.ch.SocketChannelImpl.ensureOpen(SocketChannelImpl.java:160)
+	at java.base/sun.nio.ch.SocketChannelImpl.beginFinishConnect(SocketChannelImpl.java:726)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:772)
+	at org.bitcoinj.net.NioClientManager.handleKey(NioClientManager.java:64)
+	at org.bitcoinj.net.NioClientManager.run(NioClientManager.java:122)
+	at com.google.common.util.concurrent.AbstractExecutionThreadService$1$2.run(AbstractExecutionThreadService.java:66)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:119)
+	at org.bitcoinj.utils.ContextPropagatingThreadFactory$1.run(ContextPropagatingThreadFactory.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+[NioClientManager] INFO org.bitcoinj.core.PeerGroup - [138.68.93.0]:18333: Peer died      (19 connected, 0 pending, 12 max)
+[NioClientManager] WARN org.bitcoinj.net.NioClientManager - Failed to connect with exception: java.nio.channels.ClosedChannelException: null
+java.nio.channels.ClosedChannelException
+	at java.base/sun.nio.ch.SocketChannelImpl.ensureOpen(SocketChannelImpl.java:160)
+	at java.base/sun.nio.ch.SocketChannelImpl.beginFinishConnect(SocketChannelImpl.java:726)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:772)
+	at org.bitcoinj.net.NioClientManager.handleKey(NioClientManager.java:64)
+	at org.bitcoinj.net.NioClientManager.run(NioClientManager.java:122)
+	at com.google.common.util.concurrent.AbstractExecutionThreadService$1$2.run(AbstractExecutionThreadService.java:66)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:119)
+	at org.bitcoinj.utils.ContextPropagatingThreadFactory$1.run(ContextPropagatingThreadFactory.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+[NioClientManager] INFO org.bitcoinj.core.PeerGroup - [109.233.109.26]:18333: Peer died      (18 connected, 0 pending, 12 max)
+[AWT-EventQueue-0] ERROR org.bitcoinj.core.Context - Performing thread fixup: you are accessing bitcoinj via a thread that has not had any context set on it.
+[AWT-EventQueue-0] ERROR org.bitcoinj.core.Context - This error has been corrected for, but doing this makes your app less robust.
+[AWT-EventQueue-0] ERROR org.bitcoinj.core.Context - You should use Context.propagate() or a ContextPropagatingThreadFactory.
+[AWT-EventQueue-0] ERROR org.bitcoinj.core.Context - Please refer to the user guide for more information about this.
+[AWT-EventQueue-0] ERROR org.bitcoinj.core.Context - Thread name is AWT-EventQueue-0.
+[AWT-EventQueue-0] INFO org.bitcoinj.wallet.Wallet - Completing send tx with 1 outputs totalling 0.00 BTC and a fee of 0.00001 BTC/kB
+[AWT-EventQueue-0] INFO org.bitcoinj.wallet.Wallet -   with 0.01501224 BTC change
+[AWT-EventQueue-0] INFO org.bitcoinj.wallet.Wallet -   completed: Transaction{541f90f18a7698455edd226c2b9ed77c562ce2d9320da01f4d76d7cc351acedb
+purpose: USER_PAYMENT
+   in   PUSHDATA(72)[3045022100c2677994620bf426e6c2eccfcfb1d4c23506c2a29e5ed1c82d8ced65fc49a1a802207bb44de39a708bbf05238bfe5489263f3484cb01bddc93a9b32e8905ceb5311701] PUSHDATA(33)[036561c2232e760a32e289a0bd189dd127932c0b57346c06fd77fa8b62d697c9bf]  0.01501468 BTC
+        P2PKH addr:mufFWLjsN4xqb6SusTVPdTZsEQde2mSGUd  outpoint:3e837adf77f45574534e60de3053dd91a14ac65a1b454504f404636e7ca0fbd6:0
+   out  DUP HASH160 PUSHDATA(20)[04e628227e9b3ddd6862e6b96e8951852157d190] EQUALVERIFY CHECKSIG  0.01501224 BTC
+        P2PKH addr:mfxriPqQ8Xbtb8B3Lu1XTv2zuzXfxt8MTu
+   out  RETURN PUSHDATA(40)[6769746875622e636f6d2f6a6176612d63727970746f2f426974636f696e4a54696d657374616d70]  0.00 BTC
+        unknown script type   fee  0.00001004 BTC/kB, 0.00000244 BTC for 243 bytes
+}
+[AWT-EventQueue-0] INFO org.bitcoinj.wallet.Wallet - commitTx of 541f90f18a7698455edd226c2b9ed77c562ce2d9320da01f4d76d7cc351acedb
+[AWT-EventQueue-0] INFO org.bitcoinj.wallet.Wallet -   marked 3e837adf77f45574534e60de3053dd91a14ac65a1b454504f404636e7ca0fbd6:0 as spent by 541f90f18a7698455edd226c2b9ed77c562ce2d9320da01f4d76d7cc351acedb
+[AWT-EventQueue-0] INFO org.bitcoinj.wallet.Wallet -   3e837adf77f45574534e60de3053dd91a14ac65a1b454504f404636e7ca0fbd6 prevtx <-unspent ->spent
+[AWT-EventQueue-0] INFO org.bitcoinj.wallet.Wallet - ->pending: 541f90f18a7698455edd226c2b9ed77c562ce2d9320da01f4d76d7cc351acedb
+[AWT-EventQueue-0] INFO org.bitcoinj.wallet.Wallet - Estimated balance is now: 0.047358 BTC
+[AWT-EventQueue-0] INFO org.bitcoinj.wallet.KeyChainGroup - Marking key as used: DeterministicKey{pub=034af621c2e1771d724f5cf0d5271bb38241e634d1e8d9c96fada9361f0b00d872, chainCode=338b3ad03c79d4c5004ef494893fdac75de2d60ac7d039e62ab8ac1468c63f37, path=M/0H/1/27, isEncrypted=false, isPubKeyOnly=false}
+[AWT-EventQueue-0] INFO org.bitcoinj.wallet.WalletFiles - Saving wallet; last seen block is height 1670950, date 2020-03-24T14:55:41Z, hash 00000000c8f91fb6bc037899858aca9c5df4c5e120c383c294d509171492c151
+[AWT-EventQueue-0] INFO org.bitcoinj.wallet.WalletFiles - Save completed in 38.04 ms
+[AWT-EventQueue-0] INFO org.bitcoinj.core.TransactionBroadcast - Waiting for 10 peers required for broadcast, we have 18 ...
+[AWT-EventQueue-0] INFO org.bitcoinj.core.TransactionBroadcast - broadcastTransaction: We have 18 peers, adding 541f90f18a7698455edd226c2b9ed77c562ce2d9320da01f4d76d7cc351acedb to the memory pool
+[AWT-EventQueue-0] INFO org.bitcoinj.core.TransactionBroadcast - Sending to 9 peers, will wait for 5, sending to: Peer{[95.217.50.49]:18333, version=70015, subVer=/Satoshi:0.19.1/, services=1033 (NETWORK, WITNESS, NETWORK_LIMITED), time=2020-03-24 15:58:57, height=1670950},Peer{[148.251.191.74]:18333, version=70015, subVer=/Satoshi:0.14.2/, services=13 (NETWORK, BLOOM, WITNESS), time=2020-03-24 15:58:57, height=1670950},Peer{[79.98.159.7]:18333, version=70015, subVer=/Satoshi:0.19.0.1/, services=1033 (NETWORK, WITNESS, NETWORK_LIMITED), time=2020-03-24 15:58:56, height=1670950},Peer{[18.136.208.99]:18333, version=70012, subVer=/Satoshi:0.12.1(bitcore)/, services=5 (NETWORK, BLOOM), time=2020-03-24 15:58:56, height=1670950},Peer{[94.79.55.28]:18333, version=70015, subVer=/Satoshi:0.16.3/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2020-03-24 15:58:57, height=1670950},Peer{[52.197.170.28]:18333, version=70015, subVer=/Satoshi:0.16.0/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2020-03-24 15:58:57, height=1414448},Peer{[52.1.65.208]:18333, version=70012, subVer=/Satoshi:0.12.1/, services=5 (NETWORK, BLOOM), time=2020-03-24 15:58:58, height=1670950},Peer{[93.180.178.213]:18333, version=70015, subVer=/Satoshi:0.19.0.1/, services=1033 (NETWORK, WITNESS, NETWORK_LIMITED), time=2020-03-24 15:58:39, height=1670950},Peer{[3.112.43.163]:18333, version=70015, subVer=/Satoshi:0.18.0/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2020-03-24 15:58:40, height=1670950}
+[NioClientManager] INFO org.bitcoinj.core.Peer - [52.197.170.28]:18333: Received getdata message: GetDataMessage{[TRANSACTION: 3e837adf77f45574534e60de3053dd91a14ac65a1b454504f404636e7ca0fbd6]}
+[NioClientManager] INFO org.bitcoinj.core.Peer - [52.197.170.28]:18333: Sending 1 items gathered from listeners to peer
+[NioClientManager] ERROR org.bitcoinj.core.Peer - Peer{[52.197.170.28]:18333, version=70015, subVer=/Satoshi:0.16.0/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2020-03-24 15:58:57, height=1414448} /Satoshi:0.16.0/: Received Reject: tx 3e837adf77f45574534e60de3053dd91a14ac65a1b454504f404636e7ca0fbd6 for reason 'non-final' (64)
+[bitcoinj user thread] INFO org.bitcoinj.core.TransactionBroadcast - broadcastTransaction: SEEN_PEERS:  TX 541f90f18a7698455edd226c2b9ed77c562ce2d9320da01f4d76d7cc351acedb seen by 1 peers
+[bitcoinj user thread] INFO org.bitcoinj.core.TransactionBroadcast - broadcastTransaction: SEEN_PEERS:  TX 541f90f18a7698455edd226c2b9ed77c562ce2d9320da01f4d76d7cc351acedb seen by 2 peers
+[bitcoinj user thread] INFO org.bitcoinj.core.TransactionBroadcast - broadcastTransaction: SEEN_PEERS:  TX 541f90f18a7698455edd226c2b9ed77c562ce2d9320da01f4d76d7cc351acedb seen by 3 peers
+[bitcoinj user thread] INFO org.bitcoinj.core.TransactionBroadcast - broadcastTransaction: SEEN_PEERS:  TX 541f90f18a7698455edd226c2b9ed77c562ce2d9320da01f4d76d7cc351acedb seen by 4 peers
+[bitcoinj user thread] INFO org.bitcoinj.core.TransactionBroadcast - broadcastTransaction: SEEN_PEERS:  TX 541f90f18a7698455edd226c2b9ed77c562ce2d9320da01f4d76d7cc351acedb seen by 5 peers
+[bitcoinj user thread] INFO org.bitcoinj.core.TransactionBroadcast - broadcastTransaction: 541f90f18a7698455edd226c2b9ed77c562ce2d9320da01f4d76d7cc351acedb complete
+[WalletAppKit STOPPING] INFO org.bitcoinj.core.PeerGroup - Awaiting PeerGroup shutdown ...
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Stopping ...
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Unsetting download peer: Peer{[5.9.5.135]:18333, version=70015, subVer=/Satoshi:0.17.0.1/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2020-03-24 15:58:39, height=1670950}
+[PeerGroup Thread] INFO org.bitcoinj.core.PeerGroup - Stopped, took 20.69 ms.
+[WalletAppKit STOPPING] INFO org.bitcoinj.core.PeerGroup - ... took 60.09 ms

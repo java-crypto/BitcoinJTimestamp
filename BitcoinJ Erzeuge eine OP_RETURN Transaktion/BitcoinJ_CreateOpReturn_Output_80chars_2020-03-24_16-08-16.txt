@@ -1,0 +1,48 @@
+Das Programm arbeitet im Netzwerk: org.bitcoin.test
+Guten Tag, zum Start bitte den Button 'starte das wallet' druecken
+Lade ein HD-Wallet mit BitcoinJ im Bitcoin Testnet und erzeuge eine OP_RETURN Transaktion mit reduzierten Kosten
+
+Das Programm benutzt das BitcoinJ WalletAppKit
+
+Bitte benutzen Sie Java 11 und bitcoinj-core-0.15.6.jar fuer dieses Programm
+
+btnStartKit laeuft im separaten Thread
+Das Wallet wurde geladen: TimestampOwn_Testnet
+
+Das Wallet aktualisiert die Blockchain in der Datei TimestampOwn_Testnet.spvchain
+Bitte haben Sie eine bis drei Minuten Geduld
+Das aktuell verfuegbare Guthaben ist: 0.047358 BTC = 4735800 Satoshi
+Aktuelle Empfangsadresse            : moZRh5LC8uVfZW1FE3o2f2gGJJzt5UNTaP
+Das Programm ist betriebsbereit und wartet auf den Einsatz
+OP_RETURN Laenge: 70 (maximal 80 Zeichen) : visit http://java-crypto.bplaced.net and http://javacrypto.bplaced.net
+OP_Return als ByteArray: 766973697420687474703a2f2f6a6176612d63727970746f2e62706c616365642e6e657420616e6420687474703a2f2f6a61766163727970746f2e62706c616365642e6e6574
+
+Erzeugung einer Transaktion und des SendRequests
+Transaktion           : Transaction{7b3ae2ee0dc92dc261b3f53160fd5dc03433e7b13233cff5832d55dd67ff905b
+purpose: UNKNOWN
+   INCOMPLETE: No inputs!
+   out  RETURN PUSHDATA(70)[766973697420687474703a2f2f6a6176612d63727970746f2e62706c616365642e6e657420616e6420687474703a2f2f6a61766163727970746f2e62706c616365642e6e6574]  0.00 BTC
+        unknown script type}
+Standard Fee per KB   : 0.001 BTC
+Reduzierte Fee per KB : 0.00001 BTC
+SendRequest           : SendRequest{emptyWallet=false, feePerKb=1000, ensureMinRequiredFee=true, signInputs=true, shuffleOutputs=true, recipientsPayFees=false}
+
+Sende den SendRequest ueber das Wallet und erhalte ein SendResult
+SendResult  : Transaction{d8a3ee0b792acd8b7fa78f0589f5c7adace8438816dd9b64bf5e029a3b137687
+updated: 2020-03-24T15:09:56Z
+purpose: USER_PAYMENT
+   in   PUSHDATA(72)[3045022100b868b73f9b4a480d14a91633efc8debbb1e6f0e4d70c72ae6b34ca705aa5683a02207eaa75b5efda9925cde1f6f3a1edcdd51fc4ff63a0c96a662442e5f03d99f20101] PUSHDATA(33)[024e8dfd80dd8a275c71e4e5c30a1fd1bde9a654fc8d84f0abfd1425d8d45f6fc3]  0.01237661 BTC
+        P2PKH addr:mqhDPskq4YTEUkb1AoFngmHVym8o2mVX4D  outpoint:323d8c343e66e44e62461a5683980b8ad0b6e2624e23b90824d07fefae861645:1
+   out  RETURN PUSHDATA(70)[766973697420687474703a2f2f6a6176612d63727970746f2e62706c616365642e6e657420616e6420687474703a2f2f6a61766163727970746f2e62706c616365642e6e6574]  0.00 BTC
+        unknown script type   out  DUP HASH160 PUSHDATA(20)[688fa81a9aecc151d294337dfa0d782b8d59c531] EQUALVERIFY CHECKSIG  0.01237387 BTC
+        P2PKH addr:mq3pfShHhiFub6vsJV5fxZ3Pej7mRZKuLe
+   fee  0.00001003 BTC/kB, 0.00000274 BTC for 273 bytes
+}
+Transaktions Id          : d8a3ee0b792acd8b7fa78f0589f5c7adace8438816dd9b64bf5e029a3b137687
+Direktlink zur Onlineanzeige: https://tbtc.bitaps.com/d8a3ee0b792acd8b7fa78f0589f5c7adace8438816dd9b64bf5e029a3b137687
+Das aktuell verfuegbare Guthaben ist: 0.04735526 BTC = 4735526 Satoshi
+Aktuelle Empfangsadresse : moZRh5LC8uVfZW1FE3o2f2gGJJzt5UNTaP
+btnClose laeuft im separaten Thread
+Das Programm endet jetzt
+Datum & Zeit am Start: 2020-03-24T16:08:25.342809
+Datum & Zeit am Ende : 2020-03-24T16:12:04.797942100
